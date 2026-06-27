@@ -67,11 +67,34 @@ Cambridge Learner's Book for those. Full details in `ncert-class9-physics/README
 
 - Source (to browse other chapters): https://ncert.nic.in/textbook.php  (Class 9 → Science)
 
+## 4. More free, legal full-text — fills the NCERT gaps — DOWNLOADED
+
+NCERT alone covers ~half the checklist. These openly-licensed / free books cover the rest
+(Light, Electricity & magnetism, Heat) and are downloaded:
+
+```
+docs/textbook/siyavula-physical-sciences/   Siyavula Gr 10 Physical Sciences (512 pp, openly licensed)
+docs/textbook/ck12-physical-science/        CK-12 worksheets + quizzes/tests (with answers)
+```
+
+- **Siyavula** (CC-licensed, free to copy/share): heat, electrostatics, electric circuits,
+  magnetism, EM radiation, waves, sound. Source: https://www.siyavula.com/read
+- **CK-12** (free): practice worksheets + ready-made quizzes/tests covering electricity,
+  light/optics, heat. Full FlexBook reads online (free account to export):
+  https://flexbooks.ck12.org/cbook/ck-12-middle-school-physical-science-flexbook-2.0/
+
+See each folder's `README.md` for the topic→file map. Together with NCERT, these give a
+**complete free, legal set** keyed to the diagnostic.
+
 ---
 
 ### Recommendation
 
-Start from the **free Issuu previews** to confirm fit, then either buy the **Learner's Book
-9 + Workbook 9** (the Workbook is what makes the weekly self-study loop easy), or fall back
-to **NCERT** if you'd rather not buy. The diagnostic in `review/checklist.md` works with any
-of these — it's keyed to the official syllabus, not to a specific book.
+You now have a **complete free, legal set** already downloaded: **NCERT** (motion, forces,
+energy, sound) + **Siyavula** (heat, electricity, magnetism, waves) + **CK-12** (practice
+worksheets, quizzes/tests). That covers the whole checklist at no cost.
+
+If you'd rather use the actual Cambridge book, the legit route is the **Learner's Book 9 +
+Workbook 9** digital-access edition (the Workbook makes the weekly self-study loop easy);
+confirm fit first via the free Issuu previews. The diagnostic in `review/checklist.md` works
+with any of these — it's keyed to the official syllabus, not to a specific book.

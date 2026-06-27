@@ -8,7 +8,9 @@ Science (0893)** curriculum. Goal: **consolidate and retain** — not exam prep.
 ```
 docs/syllabus/   Science_Curriculum_Framework_0893.pdf  ← official Cambridge syllabus (31 pp)
 docs/textbook/   SOURCES.md                             ← where to get the Cambridge textbook (Learner's + Workbook 9)
-                 ncert-class9-physics/                  ← free NCERT physics chapters, downloaded (see its README)
+                 ncert-class9-physics/                  ← free NCERT chapters: motion, forces, energy, sound
+                 siyavula-physical-sciences/            ← free CC-licensed book: heat, electricity, magnetism, waves
+                 ck12-physical-science/                 ← free CK-12 worksheets + quizzes/tests (with answers)
 review/          checklist.md                           ← 0/1/2 physics diagnostic (37 items)
                  question-sheet.md                      ← read-aloud questions for the diagnostic
 README.md        this file
@@ -43,8 +45,9 @@ final focused session.
 
 ## Getting the textbook
 
-See `docs/textbook/SOURCES.md`. Quickest start: open the free official Issuu previews to
-confirm fit; the **Workbook 9** exercises are the easiest source of weekly self-study tasks.
-A free **NCERT** physics set is already downloaded in `docs/textbook/ncert-class9-physics/`
-(covers ~half the topics — motion, forces, energy, sound). The diagnostic is keyed to the
-syllabus, so it works with any of these textbooks.
+See `docs/textbook/SOURCES.md`. A **complete free, legal set is already downloaded**:
+**NCERT** (motion, forces, energy, sound) + **Siyavula** (heat, electricity, magnetism,
+waves) + **CK-12** (worksheets + quizzes/tests with answers). Together they cover the whole
+checklist at no cost. If you prefer the actual Cambridge book, buy the **Learner's + Workbook
+9** digital edition (the Workbook makes weekly self-study easy). The diagnostic is keyed to
+the syllabus, so it works with any of these textbooks.
