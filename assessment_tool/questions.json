@@ -1,0 +1,115 @@
+{
+  "title": "Physics Diagnostic — Cambridge Lower Secondary Science 0893",
+  "scale": { "0": "Nothing", "1": "More or less", "2": "Perfect" },
+  "topics": [
+    {
+      "id": "forces-energy",
+      "name": "Forces & Energy",
+      "subtopics": [
+        {
+          "id": "gravity-energy",
+          "name": "Gravity & energy basics",
+          "questions": [
+            { "id": "7Pf.03", "text": "What is gravity? Does it act between any two objects, and how does the force depend on their masses?" },
+            { "id": "7Pf.01", "text": "Describe the energy changes when an event happens (e.g. a ball rolling to a stop)." },
+            { "id": "7Pf.02", "text": "What does it mean that energy dissipates and becomes less useful?" },
+            { "id": "7Pf.04", "text": "Is there air resistance in a vacuum? Why or why not?" }
+          ]
+        },
+        {
+          "id": "motion",
+          "name": "Motion",
+          "questions": [
+            { "id": "8Pf.01", "text": "Calculate speed from distance and time (speed = distance / time)." },
+            { "id": "8Pf.02", "text": "Interpret and draw a simple distance–time graph (steeper line? flat line?)." },
+            { "id": "8Pf.03", "text": "What do balanced vs unbalanced forces do to motion?" }
+          ]
+        },
+        {
+          "id": "moments-pressure",
+          "name": "Moments & pressure",
+          "questions": [
+            { "id": "8Pf.04", "text": "What is a moment (turning force) and how is it calculated (moment = force × distance)?" },
+            { "id": "8Pf.05", "text": "Write the formula for pressure (force / area); why does a sharp knife cut better?" },
+            { "id": "8Pf.06", "text": "Use particle theory to explain pressure in a gas or liquid." },
+            { "id": "8Pf.07", "text": "What is diffusion? Give an everyday example." }
+          ]
+        },
+        {
+          "id": "heat-thermal",
+          "name": "Density, heat & thermal energy",
+          "questions": [
+            { "id": "9Pf.01", "text": "Use density to explain why wood floats but a stone sinks in water." },
+            { "id": "9Pf.02", "text": "What is the difference between heat and temperature?" },
+            { "id": "9Pf.03", "text": "Can energy be created or destroyed? What happens to it instead?" },
+            { "id": "9Pf.04", "text": "Which way does thermal energy flow — hot to cold, or cold to hot? Always?" },
+            { "id": "9Pf.05", "text": "Name and give an example of conduction, convection and radiation." },
+            { "id": "9Pf.06", "text": "Why do you feel cold when water evaporates from your skin?" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "light-sound",
+      "name": "Light & Sound",
+      "subtopics": [
+        {
+          "id": "sound",
+          "name": "Sound & waves",
+          "questions": [
+            { "id": "7Ps.01", "text": "How does sound travel through air, and why can't it travel in a vacuum?" },
+            { "id": "7Ps.02", "text": "What causes an echo?" },
+            { "id": "9Ps.01", "text": "On a waveform, which feature shows loudness and which shows pitch?" },
+            { "id": "9Ps.02", "text": "Can two sound waves add up or cancel out? Show with waveforms." }
+          ]
+        },
+        {
+          "id": "light",
+          "name": "Light",
+          "questions": [
+            { "id": "8Ps.01", "text": "State the law of reflection and what happens when light hits a mirror." },
+            { "id": "8Ps.02", "text": "What happens to light going from air into glass/water, and why does it bend?" },
+            { "id": "8Ps.03", "text": "What does a prism do to white light, and what does that show?" },
+            { "id": "8Ps.04", "text": "Why does a red apple look red?" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "electricity-magnetism",
+      "name": "Electricity & Magnetism",
+      "subtopics": [
+        {
+          "id": "current-series",
+          "name": "Current & series circuits",
+          "questions": [
+            { "id": "7Pe.01", "text": "What is an electric current in terms of electrons?" },
+            { "id": "7Pe.02", "text": "Give an example of a conductor and of an insulator." },
+            { "id": "7Pe.03", "text": "Where do you put an ammeter to measure current in a series circuit?" },
+            { "id": "7Pe.04", "text": "What happens to the current if you add more lamps to a series circuit?" },
+            { "id": "7Pe.05", "text": "Draw the symbols for a cell, switch, lamp and ammeter, and a simple circuit." }
+          ]
+        },
+        {
+          "id": "magnetism",
+          "name": "Magnetism & electromagnets",
+          "questions": [
+            { "id": "8Pe.01", "text": "What is a magnetic field and where is it around a magnet?" },
+            { "id": "8Pe.02", "text": "How do you make an electromagnet, and what is it used for?" },
+            { "id": "8Pe.03", "text": "Name two ways to make an electromagnet stronger." }
+          ]
+        },
+        {
+          "id": "parallel-resistance",
+          "name": "Parallel circuits & resistance",
+          "questions": [
+            { "id": "9Pe.01", "text": "In a parallel circuit, what happens to the current at a junction?" },
+            { "id": "9Pe.02", "text": "How do you connect a voltmeter — in series or parallel? What changes if you add a cell?" },
+            { "id": "9Pe.03", "text": "Write the resistance formula (V / I); if 6 V gives 2 A, what is the resistance?" },
+            { "id": "9Pe.04", "text": "Draw and compare circuits using resistors (fixed & variable), ammeters and voltmeters." }
+          ]
+        }
+      ]
+    }
+  ]
+}

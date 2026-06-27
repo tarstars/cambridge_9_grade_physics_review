@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Physics Diagnostic</title>
+<style>
+  :root {
+    --bg: #f6f7f9; --card: #fff; --line: #e2e5ea; --ink: #1f2430; --muted: #6b7280;
+    --m0: #e5534b; --m1: #e0a82e; --m2: #3fa45b; --accent: #2f6fed;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font: 15px/1.5 system-ui, sans-serif; color: var(--ink); background: var(--bg); }
+  header {
+    position: sticky; top: 0; z-index: 10; background: var(--card);
+    border-bottom: 1px solid var(--line); padding: 12px 20px;
+    display: flex; flex-wrap: wrap; gap: 12px; align-items: center;
+  }
+  header h1 { font-size: 16px; margin: 0; flex: 1 1 auto; }
+  header .controls { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  select, button, input { font: inherit; }
+  select { padding: 6px 8px; border: 1px solid var(--line); border-radius: 7px; background: #fff; }
+  button { padding: 6px 12px; border: 1px solid var(--line); border-radius: 7px; background: #fff; cursor: pointer; }
+  button.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+  button:disabled { opacity: .5; cursor: default; }
+  #status { font-size: 13px; color: var(--muted); min-width: 90px; }
+  main { max-width: 920px; margin: 0 auto; padding: 20px; }
+  .topic { background: var(--card); border: 1px solid var(--line); border-radius: 12px; margin-bottom: 18px; overflow: hidden; }
+  .topic > h2 {
+    margin: 0; padding: 12px 16px; font-size: 15px; background: #fbfcfe;
+    border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; align-items: center;
+  }
+  .badge { font-size: 12px; font-weight: 600; color: var(--muted); }
+  .badge .bar { display: inline-block; width: 90px; height: 8px; border-radius: 5px; background: #eef0f3; margin-left: 8px; vertical-align: middle; overflow: hidden; }
+  .badge .bar > i { display: block; height: 100%; background: var(--m2); }
+  .subtopic h3 { margin: 0; padding: 10px 16px 2px; font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+  .q { padding: 10px 16px; border-top: 1px solid var(--line); display: grid; grid-template-columns: 1fr auto; gap: 8px 14px; align-items: start; }
+  .q .qtext { }
+  .q .code { color: var(--muted); font-size: 12px; font-family: ui-monospace, monospace; margin-right: 6px; }
+  .marks { display: flex; gap: 4px; }
+  .marks button { width: 34px; text-align: center; font-weight: 700; padding: 6px 0; }
+  .marks button.sel0 { background: var(--m0); color: #fff; border-color: var(--m0); }
+  .marks button.sel1 { background: var(--m1); color: #fff; border-color: var(--m1); }
+  .marks button.sel2 { background: var(--m2); color: #fff; border-color: var(--m2); }
+  .q .comment { grid-column: 1 / -1; }
+  .q .comment input { width: 100%; padding: 6px 8px; border: 1px solid var(--line); border-radius: 7px; }
+  .legend { color: var(--muted); font-size: 13px; margin: 0 0 14px; }
+  .legend b { color: var(--ink); }
+</style>
+</head>
+<body>
+<header>
+  <h1 id="title">Physics Diagnostic</h1>
+  <div class="controls">
+    <label>Session
+      <select id="session"></select>
+    </label>
+    <button id="new">+ New</button>
+    <button id="save" class="primary">Save</button>
+    <span id="status"></span>
+  </div>
+</header>
+<main>
+  <p class="legend">Mark each question: <b style="color:var(--m0)">0</b> nothing &nbsp;
+    <b style="color:var(--m1)">1</b> more or less &nbsp;
+    <b style="color:var(--m2)">2</b> perfect. Add a comment for anything to revisit. Click a selected mark again to clear it.</p>
+  <div id="topics"></div>
+</main>
+<script>
+let questions = null;
+let results = null;            // { sessions: [...] }
+let currentId = null;
+let dirty = false;
+
+const $ = (sel) => document.querySelector(sel);
+
+function currentSession() {
+  return results.sessions.find(s => s.id === currentId);
+}
+
+function answersFor() {
+  const s = currentSession();
+  if (!s.answers) s.answers = {};
+  return s.answers;
+}
+
+function setStatus(text, ok) {
+  const el = $('#status');
+  el.textContent = text;
+  el.style.color = ok === false ? 'var(--m0)' : (ok ? 'var(--m2)' : 'var(--muted)');
+}
+
+function markDirty() { dirty = true; setStatus('unsaved changes'); }
+
+async function load() {
+  questions = await (await fetch('/api/questions')).json();
+  results = await (await fetch('/api/results')).json();
+  if (!results.sessions || results.sessions.length === 0) {
+    results.sessions = [{ id: today(), label: 'Week 0 — diagnostic', answers: {} }];
+  }
+  currentId = results.sessions[0].id;
+  $('#title').textContent = questions.title || 'Physics Diagnostic';
+  renderSessions();
+  render();
+}
+
+function today() {
+  return new Date().toISOString().slice(0, 10);
+}
+
+function renderSessions() {
+  const sel = $('#session');
+  sel.innerHTML = '';
+  for (const s of results.sessions) {
+    const o = document.createElement('option');
+    o.value = s.id;
+    o.textContent = s.label ? `${s.label} (${s.id})` : s.id;
+    sel.appendChild(o);
+  }
+  sel.value = currentId;
+}
+
+function setMark(qid, mark) {
+  const a = answersFor();
+  if (!a[qid]) a[qid] = { mark: null, comment: '' };
+  a[qid].mark = (a[qid].mark === mark) ? null : mark;  // toggle off if same
+  markDirty();
+  render();
+}
+
+function setComment(qid, text) {
+  const a = answersFor();
+  if (!a[qid]) a[qid] = { mark: null, comment: '' };
+  a[qid].comment = text;
+  markDirty();
+}
+
+function topicRollup(topic) {
+  const a = answersFor();
+  let sum = 0, count = 0, answered = 0;
+  for (const sub of topic.subtopics) {
+    for (const q of sub.questions) {
+      count++;
+      const m = a[q.id] && a[q.id].mark;
+      if (m === 0 || m === 1 || m === 2) { sum += m; answered++; }
+    }
+  }
+  return { sum, max: count * 2, answered, count };
+}
+
+function render() {
+  const a = answersFor();
+  const root = $('#topics');
+  root.innerHTML = '';
+  for (const topic of questions.topics) {
+    const r = topicRollup(topic);
+    const pct = r.max ? Math.round(100 * r.sum / r.max) : 0;
+    const card = document.createElement('div');
+    card.className = 'topic';
+    card.innerHTML = `<h2>${topic.name}
+      <span class="badge">${r.sum}/${r.max} &nbsp; ${r.answered}/${r.count} marked
+      <span class="bar"><i style="width:${pct}%"></i></span></span></h2>`;
+    for (const sub of topic.subtopics) {
+      const h = document.createElement('div');
+      h.className = 'subtopic';
+      h.innerHTML = `<h3>${sub.name}</h3>`;
+      card.appendChild(h);
+      for (const q of sub.questions) {
+        const ans = a[q.id] || { mark: null, comment: '' };
+        const row = document.createElement('div');
+        row.className = 'q';
+        const sel = (m) => ans.mark === m ? `sel${m}` : '';
+        row.innerHTML = `
+          <div class="qtext"><span class="code">${q.id}</span>${q.text}</div>
+          <div class="marks">
+            <button class="${sel(0)}" data-q="${q.id}" data-m="0">0</button>
+            <button class="${sel(1)}" data-q="${q.id}" data-m="1">1</button>
+            <button class="${sel(2)}" data-q="${q.id}" data-m="2">2</button>
+          </div>
+          <div class="comment"><input type="text" placeholder="comment (optional)"
+            data-qc="${q.id}" value="${(ans.comment || '').replace(/"/g, '&quot;')}"></div>`;
+        card.appendChild(row);
+      }
+    }
+    root.appendChild(card);
+  }
+  root.querySelectorAll('.marks button').forEach(b => {
+    b.onclick = () => setMark(b.dataset.q, Number(b.dataset.m));
+  });
+  root.querySelectorAll('input[data-qc]').forEach(inp => {
+    inp.oninput = () => setComment(inp.dataset.qc, inp.value);
+  });
+}
+
+async function save() {
+  setStatus('saving…');
+  const resp = await fetch('/api/results', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(results),
+  });
+  const out = await resp.json();
+  if (out.ok) { dirty = false; setStatus('saved ✓', true); }
+  else { setStatus('save failed', false); alert('Save failed:\n' + (out.errors || []).join('\n')); }
+}
+
+$('#save').onclick = save;
+
+$('#session').onchange = (e) => {
+  if (dirty && !confirm('Switch session and lose unsaved changes?')) {
+    e.target.value = currentId; return;
+  }
+  currentId = e.target.value;
+  dirty = false; setStatus('');
+  render();
+};
+
+$('#new').onclick = () => {
+  const label = prompt('Name for the new assessment (e.g. "Week 8 — re-test"):', 'Re-test');
+  if (label === null) return;
+  let id = today();
+  let n = 2;
+  while (results.sessions.some(s => s.id === id)) { id = today() + '-' + n++; }
+  results.sessions.push({ id, label, answers: {} });
+  currentId = id;
+  renderSessions();
+  markDirty();
+  render();
+};
+
+window.addEventListener('beforeunload', (e) => {
+  if (dirty) { e.preventDefault(); e.returnValue = ''; }
+});
+
+load();
+</script>
+</body>
+</html>

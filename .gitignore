@@ -1,2 +1,6 @@
 # Local Claude Code settings (machine-specific permission state)
 .claude/settings.local.json
+
+# Python
+__pycache__/
+*.pyc
