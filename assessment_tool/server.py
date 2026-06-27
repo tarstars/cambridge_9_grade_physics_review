@@ -4,6 +4,7 @@ No third-party dependencies — run with: python3 server.py
 Serves the UI and a small JSON API backed by questions.json / results.json.
 """
 import argparse
+import errno
 import json
 import os
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -82,7 +83,15 @@ def main():
     parser.add_argument("--host", default="127.0.0.1")
     parser.add_argument("--port", type=int, default=8000)
     args = parser.parse_args()
-    server = ThreadingHTTPServer((args.host, args.port), Handler)
+    try:
+        server = ThreadingHTTPServer((args.host, args.port), Handler)
+    except OSError as exc:
+        if exc.errno == errno.EADDRINUSE:
+            raise SystemExit(
+                f"Port {args.port} is already in use by another program.\n"
+                f"Start on a different port, e.g.:  python3 server.py --port {args.port + 1}"
+            )
+        raise
     print(f"Assessment tool running at http://{args.host}:{args.port}  (Ctrl-C to stop)")
     try:
         server.serve_forever()
