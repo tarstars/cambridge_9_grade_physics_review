@@ -18,7 +18,7 @@ that file to keep the history.
 
 Use the **Session** dropdown to switch between assessments, and **+ New** to start another
 (e.g. the Week-8 re-test). Each session stores its own marks, so you can compare progress over
-time. The app starts with one session, "Week 0 — diagnostic".
+time. The app starts with one session, "Baseline — grades 7-9 program".
 
 ## Files
 
@@ -27,7 +27,7 @@ time. The app starts with one session, "Week 0 — diagnostic".
 | `server.py` | stdlib HTTP server (serves the UI + JSON API) |
 | `store.py` | load / save / validate / rollup logic (unit-tested) |
 | `test_store.py` | tests for `store.py` — run `python3 -m unittest` |
-| `questions.json` | the question bank: topics → subtopics → questions (37 items) |
+| `questions.json` | the question bank: sections → subsections → questions (Grade 7–9 program, ~58 items) |
 | `results.json` | your marks & comments — **this is the data that's saved** |
 | `index.html` | the single-page UI (vanilla JS) |
 
@@ -47,5 +47,6 @@ python3 -m unittest -v
 
 ## Note on data
 
-`results.json` is the source of truth and lives in the repo. The question bank mirrors
-`review/checklist.md`; if you change one, update the other.
+`results.json` is the source of truth and lives in the repo. `questions.json` is the
+comprehensive Grade 7–9 physics program (the markdown `review/checklist.md` is an older,
+lighter version).

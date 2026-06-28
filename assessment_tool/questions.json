@@ -1,7 +1,7 @@
 {
-  "title": "Grade-10 Prerequisites — Physics readiness check (foundations for IGCSE 0625)",
+  "title": "Physics — comprehensive review for the grades below 10 (Grade 7–9 program)",
   "scale": { "0": "Nothing", "1": "More or less", "2": "Perfect" },
-  "note": "This tests the PREREQUISITES for grade 10 — what he should already know before starting IGCSE Physics 0625. It deliberately does NOT test grade-10 content itself (that is next year's material). Sections mirror the IGCSE topics so you can see which foundation feeds which upcoming topic.",
+  "note": "A grade-by-grade physics test covering the program of the grades below 10, at the depth of a solid school course. Foundational (prerequisite) items are the easy questions within each grade; the Maths & practical-skills section underpins all of it. Grade-10 / IGCSE content (lenses, refractive index, electromagnetic induction, half-life, redshift, specific heat, etc.) is deliberately left out.",
   "topics": [
     {
       "id": "skills",
@@ -14,119 +14,139 @@
             { "id": "skills-1", "text": "Rearrange a simple formula: from speed = distance / time, make distance the subject." },
             { "id": "skills-2", "text": "Substitute numbers into a formula and give the answer with the correct unit." },
             { "id": "skills-3", "text": "Read a measurement accurately from a ruler, a measuring cylinder and a thermometer." },
-            { "id": "skills-4", "text": "Read a simple line graph: what does a steeper line (the gradient) tell you?" },
+            { "id": "skills-4", "text": "Read a line graph: what does the gradient (steepness) tell you, and what does a flat line mean?" },
             { "id": "skills-5", "text": "Write a large and a small number in powers of ten (e.g. 3000 and 0.005)." },
-            { "id": "skills-6", "text": "Calculate the area of a rectangle and the volume of a box." },
+            { "id": "skills-6", "text": "Calculate the area of a rectangle and the volume of a box, with units." },
             { "id": "skills-7", "text": "Use a fraction, a decimal and a percentage in a simple calculation." }
           ]
         }
       ]
     },
     {
-      "id": "mfe",
-      "name": "Foundations for: Motion, forces & energy",
+      "id": "grade7",
+      "name": "Grade 7 physics",
       "subtopics": [
         {
-          "id": "mfe-foundations",
-          "name": "Motion, forces, energy, density, pressure",
+          "id": "g7-measurement-forces",
+          "name": "Quantities, forces, gravity",
           "questions": [
-            { "id": "mfe-1", "text": "State the units used for length, mass and time." },
-            { "id": "mfe-2", "text": "Calculate speed from distance and time." },
-            { "id": "mfe-3", "text": "Read a distance–time graph: what do a steep line and a flat line mean?" },
-            { "id": "mfe-4", "text": "Explain the difference between mass and weight." },
-            { "id": "mfe-5", "text": "Use the idea of density to explain why some things float and others sink." },
-            { "id": "mfe-6", "text": "Describe what balanced and unbalanced forces do to motion." },
-            { "id": "mfe-7", "text": "Give an example of friction and of gravity acting as forces." },
-            { "id": "mfe-8", "text": "Find the turning effect of a force (moment = force × distance)." },
-            { "id": "mfe-9", "text": "Name some energy stores and describe one energy transfer." },
-            { "id": "mfe-10", "text": "State that energy is conserved — it is not created or destroyed." },
-            { "id": "mfe-11", "text": "Explain in everyday words what 'work' and 'power' mean." },
-            { "id": "mfe-12", "text": "Use pressure = force / area; why does a sharp knife cut more easily than a blunt one?" }
+            { "id": "g7-1", "text": "Name the basic physical quantities and their units: length, mass, time, temperature." },
+            { "id": "g7-2", "text": "Name common measuring instruments and what each measures (ruler, balance, stopwatch, thermometer, measuring cylinder)." },
+            { "id": "g7-3", "text": "What is a force? Give examples (push/pull) and name several types (gravity, friction, magnetic, contact)." },
+            { "id": "g7-4", "text": "How is a force measured, in what unit, and with what instrument (newton, spring balance)?" },
+            { "id": "g7-5", "text": "Describe gravity as a force, and explain the difference between mass and weight." }
+          ]
+        },
+        {
+          "id": "g7-energy-density",
+          "name": "Energy & density",
+          "questions": [
+            { "id": "g7-6", "text": "Name several forms/stores of energy and describe one energy transfer." },
+            { "id": "g7-7", "text": "State that energy is conserved, and that it tends to dissipate (spread out, become less useful)." },
+            { "id": "g7-8", "text": "What is density (mass per unit volume), and how would you measure the density of a stone?" },
+            { "id": "g7-9", "text": "Use the idea of density to explain why some objects float and others sink." }
+          ]
+        },
+        {
+          "id": "g7-sound-electricity",
+          "name": "Sound & simple electricity",
+          "questions": [
+            { "id": "g7-10", "text": "How is sound produced, and why can it not travel through a vacuum?" },
+            { "id": "g7-11", "text": "What causes an echo, and what changes the pitch and the loudness of a sound?" },
+            { "id": "g7-12", "text": "Describe electric current as a flow of charge/electrons; give an example of a conductor and an insulator." },
+            { "id": "g7-13", "text": "Build a simple series circuit and draw the symbols for a cell, switch, lamp and ammeter." },
+            { "id": "g7-14", "text": "Where is an ammeter connected, and what happens to the current when you add more lamps in series?" }
           ]
         }
       ]
     },
     {
-      "id": "thermal",
-      "name": "Foundations for: Thermal physics",
+      "id": "grade8",
+      "name": "Grade 8 physics",
       "subtopics": [
         {
-          "id": "thermal-foundations",
-          "name": "Particles, states, heat transfer",
+          "id": "g8-motion",
+          "name": "Motion & forces",
           "questions": [
-            { "id": "thermal-1", "text": "Describe how the particles are arranged and move in solids, liquids and gases." },
-            { "id": "thermal-2", "text": "Name the changes of state: melting, boiling, evaporation, condensation, freezing." },
-            { "id": "thermal-3", "text": "Explain the difference between heat (thermal energy) and temperature." },
-            { "id": "thermal-4", "text": "Describe conduction, convection and radiation, with an example of each." },
-            { "id": "thermal-5", "text": "Explain why evaporation causes cooling." },
-            { "id": "thermal-6", "text": "Describe what happens to most materials when they are heated (expansion)." }
+            { "id": "g8-1", "text": "Calculate speed (speed = distance / time); what is meant by average speed?" },
+            { "id": "g8-2", "text": "Draw and interpret a distance–time graph (steady speed, faster, stationary)." },
+            { "id": "g8-3", "text": "Explain the difference between speed and velocity, and what acceleration means." },
+            { "id": "g8-4", "text": "Describe the effect of balanced and unbalanced forces on motion, and the role of friction." },
+            { "id": "g8-5", "text": "What is the turning effect of a force? Use moment = force × distance, with an example (seesaw/lever)." }
+          ]
+        },
+        {
+          "id": "g8-pressure-heat",
+          "name": "Pressure & thermal energy",
+          "questions": [
+            { "id": "g8-6", "text": "Define pressure (force / area); explain why skis or wide tyres reduce pressure on the ground." },
+            { "id": "g8-7", "text": "Use the particle model to explain pressure in liquids and gases, and how it changes with depth." },
+            { "id": "g8-8", "text": "What is atmospheric pressure, and give one piece of evidence that it exists." },
+            { "id": "g8-9", "text": "Explain the difference between heat and temperature, and how a thermometer works." },
+            { "id": "g8-10", "text": "Describe thermal expansion of solids, liquids and gases, with an everyday example." },
+            { "id": "g8-11", "text": "Describe conduction, convection and radiation, with an example and an application of each." }
+          ]
+        },
+        {
+          "id": "g8-light-magnetism",
+          "name": "Light & magnetism",
+          "questions": [
+            { "id": "g8-12", "text": "State that light travels in straight lines; explain how we are able to see objects." },
+            { "id": "g8-13", "text": "State and use the law of reflection, and describe the image formed in a plane mirror." },
+            { "id": "g8-14", "text": "Describe refraction (light bending) when it passes into glass or water, and why it happens." },
+            { "id": "g8-15", "text": "What does a prism do to white light, and why does a coloured object look that colour?" },
+            { "id": "g8-16", "text": "Describe a magnet and its magnetic field, and say which materials are magnetic." },
+            { "id": "g8-17", "text": "How do you make an electromagnet, how can you make it stronger, and give a use." }
           ]
         }
       ]
     },
     {
-      "id": "waves",
-      "name": "Foundations for: Waves (light & sound)",
+      "id": "grade9",
+      "name": "Grade 9 physics",
       "subtopics": [
         {
-          "id": "waves-foundations",
-          "name": "Sound and light basics",
+          "id": "g9-kinematics-dynamics",
+          "name": "Kinematics & dynamics",
           "questions": [
-            { "id": "waves-1", "text": "Explain how sound travels, and why it cannot travel through a vacuum." },
-            { "id": "waves-2", "text": "Explain what causes an echo." },
-            { "id": "waves-3", "text": "Say which feature of a sound makes it louder, and which makes it higher in pitch." },
-            { "id": "waves-4", "text": "State the law of reflection and describe what a plane mirror does to light." },
-            { "id": "waves-5", "text": "Describe how light bends (refracts) when it passes from air into glass or water." },
-            { "id": "waves-6", "text": "Describe what a prism does to white light." },
-            { "id": "waves-7", "text": "Explain why a red object looks red." }
+            { "id": "g9-1", "text": "Define velocity and acceleration; interpret a speed–time graph (what its gradient and area mean)." },
+            { "id": "g9-2", "text": "State Newton's first law (inertia) with an example." },
+            { "id": "g9-3", "text": "Use Newton's second law, F = m × a, in a simple calculation." },
+            { "id": "g9-4", "text": "State Newton's third law with an example." },
+            { "id": "g9-5", "text": "Define momentum (p = m × v), calculate it, and state the idea of conservation of momentum." },
+            { "id": "g9-6", "text": "Describe gravitation as a universal attraction; what is free fall and the value of g?" }
           ]
-        }
-      ]
-    },
-    {
-      "id": "elec",
-      "name": "Foundations for: Electricity & magnetism",
-      "subtopics": [
+        },
         {
-          "id": "elec-foundations",
-          "name": "Circuits and magnets basics",
+          "id": "g9-energy",
+          "name": "Work, energy & floating",
           "questions": [
-            { "id": "elec-1", "text": "Describe electric current as a flow of electrons; give an example of a conductor and an insulator." },
-            { "id": "elec-2", "text": "Show where an ammeter goes to measure the current in a series circuit." },
-            { "id": "elec-3", "text": "Say what happens to the current when you add more lamps in a series circuit." },
-            { "id": "elec-4", "text": "Draw the standard symbols for a cell, switch, lamp, ammeter and voltmeter." },
-            { "id": "elec-5", "text": "Describe the difference between a series and a parallel circuit." },
-            { "id": "elec-6", "text": "Explain what voltage is and how a voltmeter is connected to a component." },
-            { "id": "elec-7", "text": "Use the basic idea that resistance = voltage / current." },
-            { "id": "elec-8", "text": "Describe a magnet's field, and how to make an electromagnet stronger." }
+            { "id": "g9-7", "text": "Calculate work done (work = force × distance) and state its unit." },
+            { "id": "g9-8", "text": "Calculate kinetic energy and the change in gravitational potential energy (m × g × h)." },
+            { "id": "g9-9", "text": "Define power (work / time) and efficiency, and do a simple calculation." },
+            { "id": "g9-10", "text": "Explain upthrust (buoyancy), and relate floating to density and upthrust." }
           ]
-        }
-      ]
-    },
-    {
-      "id": "atom",
-      "name": "Foundations for: Nuclear physics",
-      "subtopics": [
+        },
         {
-          "id": "atom-foundations",
-          "name": "Atomic structure basics",
+          "id": "g9-electricity",
+          "name": "Electricity",
           "questions": [
-            { "id": "atom-1", "text": "Describe the basic structure of an atom: a nucleus of protons and neutrons, with electrons around it." }
+            { "id": "g9-11", "text": "Define electric current, potential difference (voltage) and resistance, and state their units." },
+            { "id": "g9-12", "text": "State and use Ohm's law (V = I × R) in a calculation." },
+            { "id": "g9-13", "text": "Compare how current and voltage behave in series versus parallel circuits." },
+            { "id": "g9-14", "text": "Calculate electrical power (P = V × I) and the energy used by an appliance." },
+            { "id": "g9-15", "text": "Describe that an electric current produces a magnetic effect (electromagnetism) and give a use." }
           ]
-        }
-      ]
-    },
-    {
-      "id": "space",
-      "name": "Foundations for: Space physics",
-      "subtopics": [
+        },
         {
-          "id": "space-foundations",
-          "name": "Solar System basics",
+          "id": "g9-waves-atom",
+          "name": "Waves & the atom",
           "questions": [
-            { "id": "space-1", "text": "Name what is in the Solar System (Sun, planets, moons) in simple terms." },
-            { "id": "space-2", "text": "Explain day and night, and the seasons, using the Earth's spin and orbit." },
-            { "id": "space-3", "text": "State that gravity is what keeps planets and moons in their orbits." }
+            { "id": "g9-16", "text": "Define the amplitude, wavelength, frequency and period of a wave." },
+            { "id": "g9-17", "text": "Explain the difference between transverse and longitudinal waves, with an example of each." },
+            { "id": "g9-18", "text": "Use the wave equation, wave speed = frequency × wavelength, in a calculation." },
+            { "id": "g9-19", "text": "Describe the properties of sound waves (reflection/echo, pitch ↔ frequency, loudness ↔ amplitude)." },
+            { "id": "g9-20", "text": "Describe the structure of the atom (nucleus of protons and neutrons, electrons around it); what are atomic number and mass number?" }
           ]
         }
       ]

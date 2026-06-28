@@ -1,10 +1,10 @@
 # Physics Review — foundation for grade 10
 
 Reviewing physics to give a **solid basis entering grade 10**. The teacher flagged gaps in
-earlier-year ("previous-class") physics, so the test checks the **prerequisites for grade 10** —
-what he should already know *before* starting **Cambridge IGCSE Physics 0625** — **not** grade-10
-content itself. The IGCSE 0625 syllabus and grade-10 books are kept as the **source** used to
-work out what those prerequisites are (and for when he actually reaches grade 10).
+earlier-year ("previous-class") physics, so the test covers the **physics program of grades
+7–9** (everything below grade 10) — at the depth of a solid school course — to find what's
+missing. It deliberately stops short of grade-10 content. The IGCSE 0625 syllabus and grade-10
+books are kept as the **target/source** (for prerequisite-mapping and for when he reaches grade 10).
 
 ## What's here
 
@@ -23,12 +23,13 @@ review/          checklist.md, question-sheet.md            ← the quick Lower-
 README.md        this file
 ```
 
-**The diagnostic tests prerequisites, not grade-10 material.** The **web tool**
-(`assessment_tool/`) is the maintained version — **44 questions**: a maths/practical-skills
-section plus the foundations feeding each of the six IGCSE topics (so you can see which
-foundation supports which upcoming topic). The markdown `review/checklist.md` is the older
-37-item Lower-Secondary version (also prerequisite-level). Grade-10 IGCSE/A-level content is
-intentionally excluded — that's next year's learning.
+**The diagnostic is a comprehensive grade-by-grade test of the physics taught below grade 10.**
+The **web tool** (`assessment_tool/`) is the maintained version — **58 questions**: a
+maths/practical-skills section plus full **Grade 7**, **Grade 8** and **Grade 9** physics
+(mechanics, pressure, thermal, optics, quantitative electricity, waves, atomic basics). The
+prerequisites are the foundational items within each grade. Grade-10 IGCSE/A-level content is
+intentionally excluded — that's next year's learning. The markdown `review/checklist.md` is an
+older, lighter version.
 
 ## The plan (~8 weeks, ~2 h/week)
 
