@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 200" font-family="system-ui,sans-serif" font-size="11" fill="#1f2430">
+  <g stroke="#1f2430" stroke-width="2" fill="none">
+    <path d="M60,55 H96"/>
+    <path d="M124,55 H188"/>
+    <path d="M212,55 H300"/>
+    <path d="M300,55 V140"/>
+    <path d="M300,140 H192"/>
+    <path d="M168,140 H60"/>
+    <path d="M60,140 V108"/>
+    <path d="M60,82 V55"/>
+  </g>
+  <line x1="48" y1="98" x2="72" y2="98" stroke="#1f2430" stroke-width="1.5"/>
+  <line x1="54" y1="90" x2="66" y2="90" stroke="#1f2430" stroke-width="4"/>
+  <text x="14" y="102">cell</text>
+  <circle cx="96" cy="55" r="2.5" fill="#1f2430"/>
+  <circle cx="124" cy="55" r="2.5" fill="#1f2430"/>
+  <line x1="96" y1="55" x2="120" y2="42" stroke="#1f2430" stroke-width="2"/>
+  <text x="92" y="34">switch</text>
+  <circle cx="200" cy="55" r="12" fill="#fff" stroke="#1f2430" stroke-width="1.5"/>
+  <line x1="191.5" y1="46.5" x2="208.5" y2="63.5" stroke="#1f2430" stroke-width="1.2"/>
+  <line x1="208.5" y1="46.5" x2="191.5" y2="63.5" stroke="#1f2430" stroke-width="1.2"/>
+  <text x="186" y="34">lamp</text>
+  <circle cx="180" cy="140" r="12" fill="#fff" stroke="#1f2430" stroke-width="1.5"/>
+  <text x="175" y="144" font-size="12" font-weight="bold">A</text>
+  <text x="150" y="172">ammeter</text>
+</svg>

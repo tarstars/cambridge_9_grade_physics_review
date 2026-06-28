@@ -64,7 +64,7 @@
             { "id": "g7-15", "text": "What changes the pitch, and what changes the loudness, of a sound?" },
             { "id": "g7-16", "text": "Describe electric current as a flow of charge/electrons." },
             { "id": "g7-17", "text": "Explain the difference between a conductor and an insulator, with an example of each." },
-            { "id": "g7-18", "text": "Build a simple series circuit and draw the symbols for a cell, switch, lamp and ammeter.", "image": "series-parallel-circuit.svg" },
+            { "id": "g7-18", "text": "Build a simple series circuit and draw the symbols for a cell, switch, lamp and ammeter.", "image": "series-circuit.svg" },
             { "id": "g7-19", "text": "Where is an ammeter connected, and what happens to the current when you add more lamps in series?" }
           ]
         }

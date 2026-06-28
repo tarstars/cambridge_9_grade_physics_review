@@ -7,7 +7,7 @@
   <path d="M110,40 L110,150 L250,150 L250,40" fill="none" stroke="#1f2430" stroke-width="2"/>
   <path d="M152,142 C132,112 132,88 152,72" fill="none" stroke="#e5534b" stroke-width="2" marker-end="url(#fr)"/>
   <path d="M208,72 C228,88 228,112 208,142" fill="none" stroke="#2f6fed" stroke-width="2" marker-end="url(#br)"/>
-  <path d="M172,168 q9,-14 18,0 q-9,9 -18,0 z" fill="#e5534b"/>
+  <path d="M180,150 c8,9 8,18 0,24 c-8,-6 -8,-15 0,-24 z" fill="#e5534b"/>
   <text x="116" y="56" fill="#e5534b">hot rises</text>
   <text x="200" y="56" fill="#2f6fed">cool sinks</text>
   <text x="148" y="190">convection</text>
