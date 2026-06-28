@@ -73,12 +73,18 @@ NCERT alone covers ~half the checklist. These openly-licensed / free books cover
 (Light, Electricity & magnetism, Heat) and are downloaded:
 
 ```
-docs/textbook/siyavula-physical-sciences/   Siyavula Gr 10 Physical Sciences (512 pp, openly licensed)
+docs/textbook/siyavula-natural-sciences/    Siyavula Natural Sciences Gr 9 (204 pp, CC-BY) — grade-9 LEVEL
+docs/textbook/siyavula-physical-sciences/   Siyavula Physical Sciences Gr 10 (512 pp) — one level up, deeper
 docs/textbook/ck12-physical-science/        CK-12 worksheets + quizzes/tests (with answers)
 ```
 
-- **Siyavula** (CC-licensed, free to copy/share): heat, electrostatics, electric circuits,
-  magnetism, EM radiation, waves, sound. Source: https://www.siyavula.com/read
+- **Siyavula Natural Sciences Gr 9** (CC-BY): the genuine *grade-9-level* book — forces,
+  energy & machines, general electricity, heat, sound. In the SA curriculum "Physical
+  Sciences" only starts at Grade 10, so Grade 9 = the integrated "Natural Sciences" subject.
+  Lighter on detailed circuits, optics and thermal transfer (use Gr 10 / CK-12 for those).
+- **Siyavula Physical Sciences Gr 10** (CC-licensed): one level up but goes deeper — heat,
+  electrostatics, electric circuits, magnetism, EM radiation, waves, sound. Source:
+  https://www.siyavula.com/read
 - **CK-12** (free): practice worksheets + ready-made quizzes/tests covering electricity,
   light/optics, heat. Full FlexBook reads online (free account to export):
   https://flexbooks.ck12.org/cbook/ck-12-middle-school-physical-science-flexbook-2.0/
