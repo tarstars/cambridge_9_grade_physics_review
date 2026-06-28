@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 200" font-family="system-ui,sans-serif" font-size="11" fill="#1f2430">
+  <!-- SERIES -->
+  <g stroke="#1f2430" stroke-width="2" fill="none">
+    <path d="M40,60 H150"/><path d="M150,60 V130"/><path d="M150,130 H40"/>
+    <path d="M40,130 V108"/><path d="M40,82 V60"/>
+  </g>
+  <line x1="28" y1="95" x2="52" y2="95" stroke="#1f2430" stroke-width="1.5"/>
+  <line x1="34" y1="88" x2="46" y2="88" stroke="#1f2430" stroke-width="4"/>
+  <g fill="#fff" stroke="#1f2430" stroke-width="1.5">
+    <circle cx="78" cy="60" r="11"/><circle cx="118" cy="60" r="11"/>
+  </g>
+  <g stroke="#1f2430" stroke-width="1.2">
+    <line x1="70" y1="52" x2="86" y2="68"/><line x1="86" y1="52" x2="70" y2="68"/>
+    <line x1="110" y1="52" x2="126" y2="68"/><line x1="126" y1="52" x2="110" y2="68"/>
+  </g>
+  <text x="70" y="160">series</text>
+  <!-- PARALLEL -->
+  <g stroke="#1f2430" stroke-width="2" fill="none">
+    <path d="M220,60 H330"/><path d="M220,130 H330"/>
+    <path d="M220,60 V82"/><path d="M220,108 V130"/>
+    <path d="M330,60 V130"/>
+    <path d="M268,60 V49"/><path d="M268,71 V130"/>
+    <path d="M300,60 V49"/><path d="M300,71 V130"/>
+  </g>
+  <line x1="208" y1="95" x2="232" y2="95" stroke="#1f2430" stroke-width="1.5"/>
+  <line x1="214" y1="88" x2="226" y2="88" stroke="#1f2430" stroke-width="4"/>
+  <g fill="#fff" stroke="#1f2430" stroke-width="1.5">
+    <circle cx="268" cy="60" r="11"/><circle cx="300" cy="60" r="11"/>
+  </g>
+  <g stroke="#1f2430" stroke-width="1.2">
+    <line x1="260" y1="52" x2="276" y2="68"/><line x1="276" y1="52" x2="260" y2="68"/>
+    <line x1="292" y1="52" x2="308" y2="68"/><line x1="308" y1="52" x2="292" y2="68"/>
+  </g>
+  <text x="258" y="160">parallel</text>
+</svg>

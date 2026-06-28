@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 200" font-family="system-ui,sans-serif" font-size="11" fill="#1f2430">
+  <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#2f6fed"/></marker></defs>
+  <rect x="40" y="110" width="280" height="78" fill="#2f6fed" opacity="0.10"/>
+  <line x1="40" y1="110" x2="320" y2="110" stroke="#1f2430" stroke-width="1.5"/>
+  <line x1="180" y1="38" x2="180" y2="188" stroke="#6b7280" stroke-dasharray="4 3"/>
+  <line x1="92" y1="46" x2="180" y2="110" stroke="#2f6fed" stroke-width="2" marker-end="url(#ar)"/>
+  <line x1="180" y1="110" x2="222" y2="184" stroke="#2f6fed" stroke-width="2" marker-end="url(#ar)"/>
+  <text x="50" y="62">air</text>
+  <text x="50" y="150">glass</text>
+  <text x="150" y="56" fill="#6b7280">normal</text>
+</svg>

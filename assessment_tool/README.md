@@ -27,9 +27,10 @@ time. The app starts with one session, "Baseline — grades 7-9 program".
 | `server.py` | stdlib HTTP server (serves the UI + JSON API) |
 | `store.py` | load / save / validate / rollup logic (unit-tested) |
 | `test_store.py` | tests for `store.py` — run `python3 -m unittest` |
-| `questions.json` | the question bank: sections → subsections → questions (Grade 7–9 program, ~58 items) |
+| `questions.json` | the question bank: sections → subsections → questions (Grade 7–9 program, ~80 atomic items; some carry a diagram and practice problems with answers) |
 | `results.json` | your marks & comments — **this is the data that's saved** |
 | `index.html` | the single-page UI (vanilla JS) |
+| `assets/` | hand-drawn SVG diagrams shown with some questions |
 
 ## API (if you want it)
 

@@ -44,6 +44,13 @@
   .marks button.sel2 { background: var(--m2); color: #fff; border-color: var(--m2); }
   .q .comment { grid-column: 1 / -1; }
   .q .comment input { width: 100%; padding: 6px 8px; border: 1px solid var(--line); border-radius: 7px; }
+  .qimg { grid-column: 1 / -1; }
+  .qimg img { max-width: 330px; width: 100%; height: auto; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .probs { grid-column: 1 / -1; font-size: 13px; }
+  .probs summary { cursor: pointer; color: var(--accent); font-weight: 600; }
+  .probs ol { margin: 6px 0; padding-left: 22px; }
+  .probs li { margin: 2px 0; }
+  .probs .ans { color: var(--muted); }
   .legend { color: var(--muted); font-size: 13px; margin: 0 0 14px; }
   .legend b { color: var(--ink); }
 </style>
@@ -63,7 +70,8 @@
 <main>
   <p class="legend">Mark each question: <b style="color:var(--m0)">0</b> nothing &nbsp;
     <b style="color:var(--m1)">1</b> more or less &nbsp;
-    <b style="color:var(--m2)">2</b> perfect. Add a comment for anything to revisit. Click a selected mark again to clear it.</p>
+    <b style="color:var(--m2)">2</b> perfect. Add a comment for anything to revisit. Click a selected mark again to clear it.
+    Some questions show a diagram, and a <b>Practice problems</b> block (click to reveal answers) you can pose to him.</p>
   <div id="topics"></div>
 </main>
 <script>
@@ -170,6 +178,12 @@ function render() {
         const row = document.createElement('div');
         row.className = 'q';
         const sel = (m) => ans.mark === m ? `sel${m}` : '';
+        const img = q.image ? `<div class="qimg"><img src="/assets/${q.image}" alt="diagram" loading="lazy"></div>` : '';
+        const probs = (q.problems && q.problems.length)
+          ? `<details class="probs"><summary>Practice problems (${q.problems.length})</summary><ol>` +
+            q.problems.map(p => `<li>${p.q}${p.a ? ` <span class="ans">→ ${p.a}</span>` : ''}</li>`).join('') +
+            `</ol></details>`
+          : '';
         row.innerHTML = `
           <div class="qtext"><span class="code">${q.id}</span>${q.text}</div>
           <div class="marks">
@@ -177,6 +191,8 @@ function render() {
             <button class="${sel(1)}" data-q="${q.id}" data-m="1">1</button>
             <button class="${sel(2)}" data-q="${q.id}" data-m="2">2</button>
           </div>
+          ${img}
+          ${probs}
           <div class="comment"><input type="text" placeholder="comment (optional)"
             data-qc="${q.id}" value="${(ans.comment || '').replace(/"/g, '&quot;')}"></div>`;
         card.appendChild(row);

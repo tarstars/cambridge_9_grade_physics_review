@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 200" font-family="system-ui,sans-serif" font-size="11" fill="#1f2430">
+  <defs><marker id="ar" markerWidth="9" markerHeight="9" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#1f2430"/></marker></defs>
+  <line x1="45" y1="165" x2="340" y2="165" stroke="#1f2430" stroke-width="1.5" marker-end="url(#ar)"/>
+  <line x1="45" y1="165" x2="45" y2="20" stroke="#1f2430" stroke-width="1.5" marker-end="url(#ar)"/>
+  <polyline points="45,165 200,65 320,65" fill="none" stroke="#2f6fed" stroke-width="2.5"/>
+  <text x="300" y="185">time</text>
+  <text x="8" y="16">distance</text>
+  <text x="92" y="106" fill="#2f6fed">steady speed</text>
+  <text x="250" y="56" fill="#2f6fed">stopped</text>
+</svg>

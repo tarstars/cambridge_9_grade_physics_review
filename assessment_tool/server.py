@@ -15,6 +15,7 @@ BASE = os.path.dirname(os.path.abspath(__file__))
 QUESTIONS_PATH = os.path.join(BASE, "questions.json")
 RESULTS_PATH = os.path.join(BASE, "results.json")
 INDEX_PATH = os.path.join(BASE, "index.html")
+ASSETS_DIR = os.path.join(BASE, "assets")
 
 
 def load_questions():
@@ -53,8 +54,21 @@ class Handler(BaseHTTPRequestHandler):
             summary = {s["id"]: store.rollup(results, questions, s["id"])
                        for s in results.get("sessions", [])}
             self._send_json(200, summary)
+        elif self.path.startswith("/assets/"):
+            self._serve_asset(self.path[len("/assets/"):])
         else:
             self._send_json(404, {"error": "not found"})
+
+    def _serve_asset(self, name):
+        # only a bare .svg filename inside assets/ — no path traversal
+        if "/" in name or "\\" in name or ".." in name or not name.endswith(".svg"):
+            self._send_json(404, {"error": "not found"})
+            return
+        path = os.path.join(ASSETS_DIR, name)
+        if not os.path.isfile(path):
+            self._send_json(404, {"error": "not found"})
+            return
+        self._send_file(path, "image/svg+xml; charset=utf-8")
 
     def do_POST(self):
         if self.path != "/api/results":

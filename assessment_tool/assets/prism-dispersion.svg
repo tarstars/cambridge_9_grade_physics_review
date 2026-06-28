@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 200" font-family="system-ui,sans-serif" font-size="11" fill="#1f2430">
+  <polygon points="180,45 133,142 227,142" fill="#2f6fed" opacity="0.10" stroke="#1f2430" stroke-width="1.5"/>
+  <line x1="52" y1="96" x2="159" y2="96" stroke="#1f2430" stroke-width="2.5"/>
+  <text x="48" y="86">white light</text>
+  <g stroke-width="2">
+    <line x1="206" y1="119" x2="322" y2="90" stroke="#e5534b"/>
+    <line x1="206" y1="121" x2="322" y2="103" stroke="#f0a020"/>
+    <line x1="206" y1="123" x2="322" y2="116" stroke="#e8c81a"/>
+    <line x1="206" y1="125" x2="322" y2="129" stroke="#3fa45b"/>
+    <line x1="206" y1="127" x2="322" y2="142" stroke="#2f6fed"/>
+    <line x1="206" y1="129" x2="322" y2="155" stroke="#8e44ad"/>
+  </g>
+  <text x="270" y="178">spectrum</text>
+</svg>
