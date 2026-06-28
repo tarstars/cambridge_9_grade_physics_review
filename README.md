@@ -1,9 +1,10 @@
 # Physics Review — foundation for grade 10
 
-Reviewing physics to give a **solid basis entering grade 10**: diagnose gaps from earlier
-years (the teacher flagged "previous-class" weaknesses) and build toward the standard grade-10
-course, **Cambridge IGCSE Physics 0625**. The Lower Secondary (0893) physics is the foundation
-layer; IGCSE 0625 is the target.
+Reviewing physics to give a **solid basis entering grade 10**. The teacher flagged gaps in
+earlier-year ("previous-class") physics, so the test checks the **prerequisites for grade 10** —
+what he should already know *before* starting **Cambridge IGCSE Physics 0625** — **not** grade-10
+content itself. The IGCSE 0625 syllabus and grade-10 books are kept as the **source** used to
+work out what those prerequisites are (and for when he actually reaches grade 10).
 
 ## What's here
 
@@ -22,11 +23,12 @@ review/          checklist.md, question-sheet.md            ← the quick Lower-
 README.md        this file
 ```
 
-**The diagnostic lives in two places:** the **web tool** (`assessment_tool/`) is now the
-comprehensive version — **85 questions across all six IGCSE 0625 topics**, each tagged
-`foundation` / `core` / `extended`. The markdown `review/checklist.md` is the quick 37-item
-Lower-Secondary (foundation-only) version. Start with foundations to catch the earlier-year
-gaps, then use the `core` items for grade-10 readiness; `extended` is stretch.
+**The diagnostic tests prerequisites, not grade-10 material.** The **web tool**
+(`assessment_tool/`) is the maintained version — **44 questions**: a maths/practical-skills
+section plus the foundations feeding each of the six IGCSE topics (so you can see which
+foundation supports which upcoming topic). The markdown `review/checklist.md` is the older
+37-item Lower-Secondary version (also prerequisite-level). Grade-10 IGCSE/A-level content is
+intentionally excluded — that's next year's learning.
 
 ## The plan (~8 weeks, ~2 h/week)
 

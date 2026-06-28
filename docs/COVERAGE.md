@@ -1,8 +1,10 @@
 # Coverage map — our materials vs. IGCSE Physics 0625
 
-Target: **Cambridge IGCSE Physics 0625** (`docs/syllabus/0625-IGCSE-Physics-2026-2028-syllabus.pdf`),
-the standard grade-10/11 course. The diagnostic (`assessment_tool/`) now covers all six 0625
-topics (85 questions, tagged foundation / core / extended).
+Reference: **Cambridge IGCSE Physics 0625** (`docs/syllabus/0625-IGCSE-Physics-2026-2028-syllabus.pdf`),
+the grade-10/11 course — used here as the **source** for two things: (1) deriving the
+**prerequisites** the readiness test checks (`assessment_tool/`, 44 questions: foundations for
+each topic + a maths/skills section), and (2) knowing which grade-10 materials we already have
+for when he actually reaches each topic. The diagnostic does **not** test grade-10 content.
 
 Legend: ✅ well covered · 🟡 partial · ❌ gap (worth sourcing).
 
