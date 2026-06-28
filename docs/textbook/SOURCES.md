@@ -8,6 +8,12 @@ Physics is one strand of this combined-science series. The two books most useful
 - **Workbook 9** — Focus / Practice / Challenge exercises. ISBN **9781108742894**.
   Good source of the **weekly self-study tasks** you wanted to set.
 
+> **Target is now grade-10 IGCSE Physics 0625** (foundation = this Lower Secondary set). See
+> `docs/COVERAGE.md` for how the downloaded books map to the six 0625 topics and where the
+> gaps are. The cleanest single resource for the IGCSE-specific gaps (radioactivity, space
+> physics) is the **Cambridge IGCSE Physics Coursebook** (0625-aligned) — same buy-vs-free
+> situation as below.
+
 ---
 
 ## 1. Official (legitimate) sources

@@ -1,112 +1,273 @@
 {
-  "title": "Physics Diagnostic — Cambridge Lower Secondary Science 0893",
+  "title": "Physics Diagnostic — Cambridge IGCSE Physics 0625 (with Lower Secondary foundations)",
   "scale": { "0": "Nothing", "1": "More or less", "2": "Perfect" },
+  "levels": {
+    "foundation": "Lower-secondary basics (should be solid before grade 10)",
+    "core": "IGCSE Core",
+    "extended": "IGCSE Extended / Supplement (stretch)"
+  },
   "topics": [
     {
-      "id": "forces-energy",
-      "name": "Forces & Energy",
+      "id": "motion-forces-energy",
+      "name": "1. Motion, forces and energy",
       "subtopics": [
         {
-          "id": "gravity-energy",
-          "name": "Gravity & energy basics",
+          "id": "physical-quantities",
+          "name": "1.1 Physical quantities and measurement",
           "questions": [
-            { "id": "7Pf.03", "text": "What is gravity? Does it act between any two objects, and how does the force depend on their masses?" },
-            { "id": "7Pf.01", "text": "Describe the energy changes when an event happens (e.g. a ball rolling to a stop)." },
-            { "id": "7Pf.02", "text": "What does it mean that energy dissipates and becomes less useful?" },
-            { "id": "7Pf.04", "text": "Is there air resistance in a vacuum? Why or why not?" }
+            { "id": "1.1a", "level": "foundation", "text": "Name the SI units for length, mass and time." },
+            { "id": "1.1b", "level": "core", "text": "What is the difference between a scalar and a vector quantity? Give an example of each." },
+            { "id": "1.1c", "level": "extended", "text": "How would you find the resultant of two forces acting at right angles to each other?" }
           ]
         },
         {
           "id": "motion",
-          "name": "Motion",
+          "name": "1.2 Motion",
           "questions": [
-            { "id": "8Pf.01", "text": "Calculate speed from distance and time (speed = distance / time)." },
-            { "id": "8Pf.02", "text": "Interpret and draw a simple distance–time graph (steeper line? flat line?)." },
-            { "id": "8Pf.03", "text": "What do balanced vs unbalanced forces do to motion?" }
+            { "id": "1.2a", "level": "foundation", "text": "Calculate speed from distance and time (speed = distance / time)." },
+            { "id": "1.2b", "level": "foundation", "text": "On a distance–time graph, what does a steep line mean, and what does a flat (horizontal) line mean?" },
+            { "id": "1.2c", "level": "core", "text": "Define acceleration and calculate it from a change in velocity over time." },
+            { "id": "1.2d", "level": "core", "text": "What does a speed–time graph show, and what does the area under it represent?" },
+            { "id": "1.2e", "level": "core", "text": "What is the approximate acceleration of free fall, g, near the Earth's surface?" }
           ]
         },
         {
-          "id": "moments-pressure",
-          "name": "Moments & pressure",
+          "id": "mass-weight",
+          "name": "1.3 Mass and weight",
           "questions": [
-            { "id": "8Pf.04", "text": "What is a moment (turning force) and how is it calculated (moment = force × distance)?" },
-            { "id": "8Pf.05", "text": "Write the formula for pressure (force / area); why does a sharp knife cut better?" },
-            { "id": "8Pf.06", "text": "Use particle theory to explain pressure in a gas or liquid." },
-            { "id": "8Pf.07", "text": "What is diffusion? Give an everyday example." }
+            { "id": "1.3a", "level": "foundation", "text": "What is the difference between mass and weight?" },
+            { "id": "1.3b", "level": "core", "text": "Calculate the weight of an object from its mass using W = mg." }
           ]
         },
         {
-          "id": "heat-thermal",
-          "name": "Density, heat & thermal energy",
+          "id": "density",
+          "name": "1.4 Density",
           "questions": [
-            { "id": "9Pf.01", "text": "Use density to explain why wood floats but a stone sinks in water." },
-            { "id": "9Pf.02", "text": "What is the difference between heat and temperature?" },
-            { "id": "9Pf.03", "text": "Can energy be created or destroyed? What happens to it instead?" },
-            { "id": "9Pf.04", "text": "Which way does thermal energy flow — hot to cold, or cold to hot? Always?" },
-            { "id": "9Pf.05", "text": "Name and give an example of conduction, convection and radiation." },
-            { "id": "9Pf.06", "text": "Why do you feel cold when water evaporates from your skin?" }
+            { "id": "1.4a", "level": "foundation", "text": "Use the idea of density to explain why some objects float and others sink in water." },
+            { "id": "1.4b", "level": "core", "text": "Calculate density from mass and volume; how would you measure the volume of an irregular stone?" }
+          ]
+        },
+        {
+          "id": "forces",
+          "name": "1.5 Forces",
+          "questions": [
+            { "id": "1.5a", "level": "foundation", "text": "Describe the effect of balanced and of unbalanced forces on the motion of an object." },
+            { "id": "1.5b", "level": "core", "text": "How does the resultant force on an object relate to its mass and acceleration (F = ma)?" },
+            { "id": "1.5c", "level": "foundation", "text": "What are friction and air resistance, and how do they affect a moving object?" },
+            { "id": "1.5d", "level": "foundation", "text": "Identify a turning effect and calculate a moment (moment = force x distance)." },
+            { "id": "1.5e", "level": "extended", "text": "State the conditions needed for an object to be in equilibrium." }
+          ]
+        },
+        {
+          "id": "momentum",
+          "name": "1.6 Momentum",
+          "questions": [
+            { "id": "1.6a", "level": "extended", "text": "Define momentum (p = mv) and calculate the momentum of a moving object." },
+            { "id": "1.6b", "level": "extended", "text": "State the principle of conservation of momentum and where it applies (e.g. a collision)." },
+            { "id": "1.6c", "level": "extended", "text": "What is impulse, and how does it relate force, time and change in momentum?" }
+          ]
+        },
+        {
+          "id": "energy-work-power",
+          "name": "1.7 Energy, work and power",
+          "questions": [
+            { "id": "1.7a", "level": "foundation", "text": "Name several energy stores (kinetic, gravitational, chemical, thermal...) and describe one energy transfer." },
+            { "id": "1.7b", "level": "foundation", "text": "State the principle of conservation of energy." },
+            { "id": "1.7c", "level": "core", "text": "Calculate the work done by a force (W = force x distance) and state its unit." },
+            { "id": "1.7d", "level": "core", "text": "Calculate kinetic energy, and the change in gravitational potential energy (mgh)." },
+            { "id": "1.7e", "level": "core", "text": "Define power (power = work done / time) and state its unit." },
+            { "id": "1.7f", "level": "core", "text": "What is efficiency, and how is it calculated?" }
+          ]
+        },
+        {
+          "id": "pressure",
+          "name": "1.8 Pressure",
+          "questions": [
+            { "id": "1.8a", "level": "foundation", "text": "Define pressure and use pressure = force / area; why does a sharp knife cut more easily than a blunt one?" },
+            { "id": "1.8b", "level": "core", "text": "How does the pressure in a liquid change with depth and density (change in p = density x g x change in height)?" },
+            { "id": "1.8c", "level": "foundation", "text": "Use the particle model to explain how a gas exerts pressure." }
           ]
         }
       ]
     },
     {
-      "id": "light-sound",
-      "name": "Light & Sound",
+      "id": "thermal-physics",
+      "name": "2. Thermal physics",
       "subtopics": [
         {
-          "id": "sound",
-          "name": "Sound & waves",
+          "id": "kinetic-model",
+          "name": "2.1 Kinetic particle model of matter",
           "questions": [
-            { "id": "7Ps.01", "text": "How does sound travel through air, and why can't it travel in a vacuum?" },
-            { "id": "7Ps.02", "text": "What causes an echo?" },
-            { "id": "9Ps.01", "text": "On a waveform, which feature shows loudness and which shows pitch?" },
-            { "id": "9Ps.02", "text": "Can two sound waves add up or cancel out? Show with waveforms." }
+            { "id": "2.1a", "level": "foundation", "text": "Describe the arrangement and movement of particles in solids, liquids and gases." },
+            { "id": "2.1b", "level": "foundation", "text": "Name the changes of state: melting, boiling, evaporation, condensation, freezing." },
+            { "id": "2.1c", "level": "foundation", "text": "What is diffusion? Give an everyday example." },
+            { "id": "2.1d", "level": "core", "text": "Use the kinetic model to explain how the pressure of a gas changes when it is heated or compressed." }
+          ]
+        },
+        {
+          "id": "thermal-properties",
+          "name": "2.2 Thermal properties and temperature",
+          "questions": [
+            { "id": "2.2a", "level": "foundation", "text": "What is the difference between heat (thermal energy) and temperature?" },
+            { "id": "2.2b", "level": "core", "text": "Describe thermal expansion of solids, liquids and gases, and give a everyday example." },
+            { "id": "2.2c", "level": "foundation", "text": "Explain how evaporation causes cooling." },
+            { "id": "2.2d", "level": "extended", "text": "What is meant by specific heat capacity?" }
+          ]
+        },
+        {
+          "id": "thermal-transfer",
+          "name": "2.3 Transfer of thermal energy",
+          "questions": [
+            { "id": "2.3a", "level": "foundation", "text": "Describe conduction, convection and radiation, with an example of each." },
+            { "id": "2.3b", "level": "foundation", "text": "Which way does thermal energy flow between hot and cold, and when does the net flow stop?" },
+            { "id": "2.3c", "level": "core", "text": "How can a house be designed or insulated to reduce heat loss by each method?" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "waves",
+      "name": "3. Waves",
+      "subtopics": [
+        {
+          "id": "wave-properties",
+          "name": "3.1 General properties of waves",
+          "questions": [
+            { "id": "3.1a", "level": "core", "text": "Define the amplitude, wavelength, frequency and period of a wave." },
+            { "id": "3.1b", "level": "core", "text": "What is the difference between transverse and longitudinal waves? Give an example of each." },
+            { "id": "3.1c", "level": "core", "text": "Use the wave equation, wave speed = frequency x wavelength." },
+            { "id": "3.1d", "level": "extended", "text": "Describe what happens when waves are reflected or refracted (e.g. in a ripple tank)." }
           ]
         },
         {
           "id": "light",
-          "name": "Light",
+          "name": "3.2 Light",
           "questions": [
-            { "id": "8Ps.01", "text": "State the law of reflection and what happens when light hits a mirror." },
-            { "id": "8Ps.02", "text": "What happens to light going from air into glass/water, and why does it bend?" },
-            { "id": "8Ps.03", "text": "What does a prism do to white light, and what does that show?" },
-            { "id": "8Ps.04", "text": "Why does a red apple look red?" }
+            { "id": "3.2a", "level": "foundation", "text": "State the law of reflection and describe what happens to light at a plane mirror." },
+            { "id": "3.2b", "level": "core", "text": "Describe refraction at an air-to-glass boundary in terms of change of speed; what is refractive index?" },
+            { "id": "3.2c", "level": "extended", "text": "What is total internal reflection and the critical angle? Give a use (e.g. optical fibres)." },
+            { "id": "3.2d", "level": "core", "text": "Describe how a thin converging lens forms an image, and sketch a ray diagram." },
+            { "id": "3.2e", "level": "foundation", "text": "What does a prism do to white light, and what does this tell us about white light?" }
+          ]
+        },
+        {
+          "id": "em-spectrum",
+          "name": "3.3 Electromagnetic spectrum",
+          "questions": [
+            { "id": "3.3a", "level": "core", "text": "List the regions of the electromagnetic spectrum in order of wavelength." },
+            { "id": "3.3b", "level": "core", "text": "What speed do all electromagnetic waves travel at in a vacuum?" },
+            { "id": "3.3c", "level": "core", "text": "Give one use and one danger for two different regions (e.g. microwaves, gamma rays)." }
+          ]
+        },
+        {
+          "id": "sound",
+          "name": "3.4 Sound",
+          "questions": [
+            { "id": "3.4a", "level": "foundation", "text": "How does sound travel through air, and why can it not travel through a vacuum?" },
+            { "id": "3.4b", "level": "foundation", "text": "Explain an echo as the reflection of a sound wave." },
+            { "id": "3.4c", "level": "foundation", "text": "On a waveform, which feature shows loudness and which shows pitch?" },
+            { "id": "3.4d", "level": "core", "text": "What is the approximate speed of sound in air, and how could you measure it?" }
           ]
         }
       ]
     },
     {
       "id": "electricity-magnetism",
-      "name": "Electricity & Magnetism",
+      "name": "4. Electricity and magnetism",
       "subtopics": [
         {
-          "id": "current-series",
-          "name": "Current & series circuits",
-          "questions": [
-            { "id": "7Pe.01", "text": "What is an electric current in terms of electrons?" },
-            { "id": "7Pe.02", "text": "Give an example of a conductor and of an insulator." },
-            { "id": "7Pe.03", "text": "Where do you put an ammeter to measure current in a series circuit?" },
-            { "id": "7Pe.04", "text": "What happens to the current if you add more lamps to a series circuit?" },
-            { "id": "7Pe.05", "text": "Draw the symbols for a cell, switch, lamp and ammeter, and a simple circuit." }
-          ]
-        },
-        {
           "id": "magnetism",
-          "name": "Magnetism & electromagnets",
+          "name": "4.1 Simple phenomena of magnetism",
           "questions": [
-            { "id": "8Pe.01", "text": "What is a magnetic field and where is it around a magnet?" },
-            { "id": "8Pe.02", "text": "How do you make an electromagnet, and what is it used for?" },
-            { "id": "8Pe.03", "text": "Name two ways to make an electromagnet stronger." }
+            { "id": "4.1a", "level": "foundation", "text": "What is a magnetic field, and where is it around a bar magnet?" },
+            { "id": "4.1b", "level": "core", "text": "What is the difference between a permanent magnet and induced magnetism, and between hard and soft magnetic materials?" },
+            { "id": "4.1c", "level": "foundation", "text": "How do you make an electromagnet, and how can you make it stronger?" }
           ]
         },
         {
-          "id": "parallel-resistance",
-          "name": "Parallel circuits & resistance",
+          "id": "electrical-quantities",
+          "name": "4.2 Electrical quantities",
           "questions": [
-            { "id": "9Pe.01", "text": "In a parallel circuit, what happens to the current at a junction?" },
-            { "id": "9Pe.02", "text": "How do you connect a voltmeter — in series or parallel? What changes if you add a cell?" },
-            { "id": "9Pe.03", "text": "Write the resistance formula (V / I); if 6 V gives 2 A, what is the resistance?" },
-            { "id": "9Pe.04", "text": "Draw and compare circuits using resistors (fixed & variable), ammeters and voltmeters." }
+            { "id": "4.2a", "level": "foundation", "text": "What is electric charge, and what is the difference between a conductor and an insulator?" },
+            { "id": "4.2b", "level": "foundation", "text": "Define electric current, state its unit, and say how it is measured." },
+            { "id": "4.2c", "level": "core", "text": "Define potential difference (voltage), state its unit, and say how a voltmeter is connected." },
+            { "id": "4.2d", "level": "core", "text": "Define resistance and use the equation R = V / I; if 6 V drives 2 A, what is the resistance?" },
+            { "id": "4.2e", "level": "core", "text": "Recall and use the equation for electrical power, P = I x V." }
+          ]
+        },
+        {
+          "id": "circuits",
+          "name": "4.3 Electric circuits",
+          "questions": [
+            { "id": "4.3a", "level": "foundation", "text": "Draw the standard symbols and a simple circuit with a cell, switch, lamp, ammeter and voltmeter." },
+            { "id": "4.3b", "level": "foundation", "text": "How does the current behave in a series circuit compared with a parallel circuit?" },
+            { "id": "4.3c", "level": "core", "text": "Calculate the combined resistance of two resistors in series (and describe parallel)." },
+            { "id": "4.3d", "level": "core", "text": "What does a thermistor or a light-dependent resistor (LDR) do, and give a use." }
+          ]
+        },
+        {
+          "id": "electrical-safety",
+          "name": "4.4 Electrical safety",
+          "questions": [
+            { "id": "4.4a", "level": "foundation", "text": "State some electrical hazards in the home and explain the purpose of a fuse and of earthing." }
+          ]
+        },
+        {
+          "id": "em-effects",
+          "name": "4.5 Electromagnetic effects",
+          "questions": [
+            { "id": "4.5a", "level": "core", "text": "What is electromagnetic induction, and how can you induce a voltage in a wire?" },
+            { "id": "4.5b", "level": "core", "text": "Describe how a simple electric motor works (the force on a current-carrying conductor in a field)." },
+            { "id": "4.5c", "level": "extended", "text": "Describe how a transformer works and use the relationship between turns and voltage." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nuclear-physics",
+      "name": "5. Nuclear physics",
+      "subtopics": [
+        {
+          "id": "atom",
+          "name": "5.1 The nuclear model of the atom",
+          "questions": [
+            { "id": "5.1a", "level": "foundation", "text": "Describe the nuclear model of the atom: a small nucleus of protons and neutrons, with electrons around it." },
+            { "id": "5.1b", "level": "core", "text": "What do proton (atomic) number and nucleon (mass) number mean? What is an isotope?" },
+            { "id": "5.1c", "level": "core", "text": "Read nuclide notation for an isotope and state its numbers of protons and neutrons." }
+          ]
+        },
+        {
+          "id": "radioactivity",
+          "name": "5.2 Radioactivity",
+          "questions": [
+            { "id": "5.2a", "level": "foundation", "text": "What is background radiation? Name two sources of it." },
+            { "id": "5.2b", "level": "core", "text": "Describe alpha, beta and gamma radiation and compare their penetrating powers." },
+            { "id": "5.2c", "level": "core", "text": "What is meant by half-life? Use it in a simple calculation." },
+            { "id": "5.2d", "level": "foundation", "text": "Give a use and a danger of radioactivity, and how sources should be handled safely." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "space-physics",
+      "name": "6. Space physics",
+      "subtopics": [
+        {
+          "id": "solar-system",
+          "name": "6.1 The Earth and the Solar System",
+          "questions": [
+            { "id": "6.1a", "level": "foundation", "text": "Describe the Solar System: the Sun, the planets, moons, asteroids and comets." },
+            { "id": "6.1b", "level": "foundation", "text": "Explain day and night, and the seasons, in terms of the Earth's rotation and orbit." },
+            { "id": "6.1c", "level": "core", "text": "What keeps a planet in orbit, and how do orbital speed and time change with distance from the Sun?" }
+          ]
+        },
+        {
+          "id": "stars-universe",
+          "name": "6.2 Stars and the Universe",
+          "questions": [
+            { "id": "6.2a", "level": "foundation", "text": "What is a galaxy, and roughly how large is the Milky Way (in light-years)?" },
+            { "id": "6.2b", "level": "core", "text": "Describe the life cycle of a star like the Sun." },
+            { "id": "6.2c", "level": "extended", "text": "What is redshift, and how does it support the idea of an expanding Universe and the Big Bang?" }
           ]
         }
       ]

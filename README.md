@@ -1,24 +1,32 @@
-# Grade-9 Physics Review
+# Physics Review — foundation for grade 10
 
-A summer review of physics after 9th grade, anchored on the **Cambridge Lower Secondary
-Science (0893)** curriculum. Goal: **consolidate and retain** — not exam prep.
+Reviewing physics to give a **solid basis entering grade 10**: diagnose gaps from earlier
+years (the teacher flagged "previous-class" weaknesses) and build toward the standard grade-10
+course, **Cambridge IGCSE Physics 0625**. The Lower Secondary (0893) physics is the foundation
+layer; IGCSE 0625 is the target.
 
 ## What's here
 
 ```
-docs/syllabus/   Science_Curriculum_Framework_0893.pdf  ← official Cambridge syllabus (31 pp)
-docs/textbook/   SOURCES.md                             ← where to get the Cambridge textbook (Learner's + Workbook 9)
-                 ncert-class9-physics/                  ← free NCERT chapters: motion, forces, energy, sound
-                 siyavula-physical-sciences/            ← free CC-licensed book: heat, electricity, magnetism, waves
-                 ck12-physical-science/                 ← free CK-12 worksheets + quizzes/tests (with answers)
-review/          checklist.md                           ← 0/1/2 physics diagnostic (37 items)
-                 question-sheet.md                      ← read-aloud questions for the diagnostic
+docs/syllabus/   0625-IGCSE-Physics-2026-2028-syllabus.pdf  ← TARGET: grade-10 syllabus (61 pp)
+                 Science_Curriculum_Framework_0893.pdf      ← foundation: Lower Secondary (Stages 7-9)
+                 664565-/744626-...-syllabus.pdf            ← A Level 9702 (long-term horizon; you added these)
+docs/COVERAGE.md                                            ← our materials mapped to the six 0625 topics + gaps
+docs/textbook/   SOURCES.md                                 ← where to get textbooks (free set + Cambridge)
+                 ncert-class9-physics/                      ← motion, forces, energy, sound
+                 siyavula-natural-sciences/                 ← Gr 9 level: forces, energy, electricity, heat
+                 siyavula-physical-sciences/                ← Gr 10: heat, electricity, magnetism, waves
+                 ck12-physical-science/                     ← worksheets + quizzes/tests (with answers)
+assessment_tool/                                            ← the diagnostic web app (run it; see its README)
+review/          checklist.md, question-sheet.md            ← the quick Lower-Secondary (foundation) diagnostic
 README.md        this file
 ```
 
-The physics strand of 0893 is taught across **Stages 7–8–9** and builds cumulatively, so the
-checklist covers all three stages, tagged `[S7]/[S8]/[S9]`. Grade-9 (Stage 9) items are the
-priority; earlier stages are the foundations.
+**The diagnostic lives in two places:** the **web tool** (`assessment_tool/`) is now the
+comprehensive version — **85 questions across all six IGCSE 0625 topics**, each tagged
+`foundation` / `core` / `extended`. The markdown `review/checklist.md` is the quick 37-item
+Lower-Secondary (foundation-only) version. Start with foundations to catch the earlier-year
+gaps, then use the `core` items for grade-10 readiness; `extended` is stretch.
 
 ## The plan (~8 weeks, ~2 h/week)
 

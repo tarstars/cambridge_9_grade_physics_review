@@ -37,6 +37,10 @@
   .q { padding: 10px 16px; border-top: 1px solid var(--line); display: grid; grid-template-columns: 1fr auto; gap: 8px 14px; align-items: start; }
   .q .qtext { }
   .q .code { color: var(--muted); font-size: 12px; font-family: ui-monospace, monospace; margin-right: 6px; }
+  .lvl { font-size: 10px; font-weight: 700; padding: 1px 6px; border-radius: 9px; margin-right: 6px; vertical-align: middle; text-transform: uppercase; letter-spacing: .03em; }
+  .lvl-foundation { background: #eaf6ee; color: #2f7d46; }
+  .lvl-core { background: #eaf0fd; color: #2f6fed; }
+  .lvl-extended { background: #f6eefb; color: #8e44ad; }
   .marks { display: flex; gap: 4px; }
   .marks button { width: 34px; text-align: center; font-weight: 700; padding: 6px 0; }
   .marks button.sel0 { background: var(--m0); color: #fff; border-color: var(--m0); }
@@ -63,7 +67,10 @@
 <main>
   <p class="legend">Mark each question: <b style="color:var(--m0)">0</b> nothing &nbsp;
     <b style="color:var(--m1)">1</b> more or less &nbsp;
-    <b style="color:var(--m2)">2</b> perfect. Add a comment for anything to revisit. Click a selected mark again to clear it.</p>
+    <b style="color:var(--m2)">2</b> perfect. Add a comment for anything to revisit. Click a selected mark again to clear it.<br>
+    Level tags: <span class="lvl lvl-foundation">foundation</span> pre-grade-10 basics &nbsp;
+    <span class="lvl lvl-core">core</span> IGCSE Core &nbsp;
+    <span class="lvl lvl-extended">extended</span> IGCSE stretch.</p>
   <div id="topics"></div>
 </main>
 <script>
@@ -171,7 +178,7 @@ function render() {
         row.className = 'q';
         const sel = (m) => ans.mark === m ? `sel${m}` : '';
         row.innerHTML = `
-          <div class="qtext"><span class="code">${q.id}</span>${q.text}</div>
+          <div class="qtext"><span class="code">${q.id}</span>${q.level ? `<span class="lvl lvl-${q.level}">${q.level}</span>` : ''}${q.text}</div>
           <div class="marks">
             <button class="${sel(0)}" data-q="${q.id}" data-m="0">0</button>
             <button class="${sel(1)}" data-q="${q.id}" data-m="1">1</button>
