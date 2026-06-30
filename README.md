@@ -20,6 +20,7 @@ docs/textbook/   SOURCES.md                                 ← where to get tex
                  ck12-physical-science/                     ← worksheets + quizzes/tests (with answers)
 assessment_tool/                                            ← the diagnostic web app (run it; see its README)
 review/          checklist.md, question-sheet.md            ← the quick Lower-Secondary (foundation) diagnostic
+                 study-references.md                        ← where to read each weak topic (file + chapter/section + page)
 README.md        this file
 ```
 
