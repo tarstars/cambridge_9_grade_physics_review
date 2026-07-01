@@ -102,11 +102,34 @@ Covers: **g9‑28** structure of the atom (0), **g9‑29** atomic & mass number 
 
 ---
 
-## On‑level alternative (the books you already have)
-The **Cambridge Lower Secondary Science Stage 7 / 8 / 9** books in `docs/textbook/cambridge/` map 1‑to‑1 to
-these grades (Stage 7 → Grade 7, etc.) and match the British framing exactly — especially handy for the
-**light/optics** topic where the free downloads are thin. (I've kept the page‑level references above on the
-free, openly‑licensed books; say the word if you want me to index the Cambridge Stage books too.)
+## On‑level option: the Cambridge Stage books you have
+Learner's Books in `docs/textbook/cambridge/`. These match the British framing exactly and are the best
+on‑level source for the **qualitative Grade 7–8 topics** — especially the **light/optics block** that's
+thin in the free set. They do **not** carry the quantitative Grade‑9 items (F=ma, Ohm's law, KE/PE
+formulas, v=fλ, the atom) — use NCERT/Siyavula for those. Physics is **Unit 3** (Forces & energy),
+**Unit 6** (Light/Sound), **Unit 9** (Electricity/Magnetism) in every stage. Navigate by unit/section
+number; pages are approximate (PDF vs printed page can differ a little).
+
+**Stage 7** (`..._7_Learners_book.pdf`)
+- §3.1 Gravity, weight and mass (≈p.68) → g7‑5, g7‑6, g7‑7
+- §3.5–3.7 Energy / Changes in energy / Where does energy go (≈p.98–110) → g7‑8, g7‑9
+- §6.1 Sound waves, §6.2 Reflections of sound (≈p.185–195) → g7‑14, g7‑15
+- §9.1 Flow of electricity, §9.2 Electrical circuits, §9.3 Measuring current (≈p.287–297) → g7‑16, g7‑17, g7‑18, g7‑19
+
+**Stage 8** (`..._8_Learners_book.pdf`)
+- §3.1 Forces and motion (≈p.75) → g7‑4, g8‑6, g8‑7
+- §3.2 Speed (≈p.85) → g8‑1, g8‑2, g8‑4, g8‑5
+- §3.4 Turning forces (≈p.98) → g8‑8
+- §3.5–3.6 Pressure between solids / in liquids (≈p.106–113) → g8‑9, g8‑10, g8‑11
+- §6.1 Reflection, §6.2 Refraction, §6.3 Making rainbows (≈p.198–212) → **g8‑18…g8‑23 (light/optics block)**
+- §9.1 Magnetic fields, §9.3 Electromagnets (≈p.305–318) → g8‑24, g8‑25
+
+**Stage 9** (`..._9_Learners_book.pdf`)
+- §3.2 Heat and temperature (≈p.98) → g8‑12
+- §3.3 Conservation of energy (≈p.106) → g7‑9
+- §3.5 Ways of transferring thermal energy (≈p.119) → g8‑15, g8‑17
+- §6.1 Loudness and pitch, §6.2 Interference of sound (≈p.206–216) → g7‑15, g9‑24, g9‑27
+- §9.1 Parallel circuits, §9.2 Current and voltage (≈p.300–308) → g9‑17, g9‑18, g9‑21
 
 ## Note on the "English terminology" gap
 Your notes flagged needing the **English terms / standard symbols** (g7‑4, g7‑18, g8‑4, g8‑17). Because all
