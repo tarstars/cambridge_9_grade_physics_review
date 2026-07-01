@@ -1,30 +1,39 @@
-# NCERT Class 9 Science — physics chapters (free, legal full text)
+# NCERT Class 9 Science — complete book (free, legal full text)
 
-Downloaded from the official NCERT site (https://ncert.nic.in). These are the **physics**
-chapters of the **2026 edition** Class 9 Science book *"Exploration: Entering the World of
-Secondary Science"* (the new "Curiosity"-style rationalised edition, 13 chapters total).
+The **full** Class 9 Science book, downloaded from the official NCERT site
+(https://ncert.nic.in): **2026 edition**, *"Exploration: Entering the World of Secondary
+Science"* — 13 chapters + prelims. Indian curriculum (not Cambridge), openly published and
+free to download; a clear, no‑cost reference.
 
-Indian curriculum, not Cambridge — but the explanations are clear and free to download, so
-this is a good no-cost backup textbook for the topics it covers.
+> Folder is named `ncert-class9-physics` for historical reasons (the project is physics‑focused
+> and the physics chapters were downloaded first). It now holds the **whole** Science book.
 
-## Chapters here
+## Contents
 
-| File | NCERT ch | Title | Cambridge 0893 topics covered |
+| File | Ch | Title | Strand |
 |---|:---:|---|---|
-| `ch04-describing-motion.pdf` | 4 | Describing Motion Around Us | speed, distance–time graphs (8Pf.01–02) |
-| `ch06-how-forces-affect-motion.pdf` | 6 | How Forces Affect Motion | balanced/unbalanced forces, gravity (7Pf.03, 8Pf.03); likely floating/buoyancy (9Pf.01) |
-| `ch07-work-energy-simple-machines.pdf` | 7 | Work, Energy, and Simple Machines | energy changes & conservation (7Pf.01–02, 9Pf.03) |
-| `ch10-sound-waves.pdf` | 10 | Sound Waves: Characteristics and Applications | sound, vibration, echoes, waveforms (7Ps.01–02, 9Ps.01–02) |
+| `ch00-prelims.pdf` | — | Front matter & Contents | — |
+| `ch01-exploration.pdf` | 1 | Exploration: Entering the World of Secondary Science | intro |
+| `ch02-cell.pdf` | 2 | Cell: The Building Block of Life | biology |
+| `ch03-tissues.pdf` | 3 | Tissues in Action | biology |
+| **`ch04-describing-motion.pdf`** | **4** | **Describing Motion Around Us** | **physics** |
+| `ch05-mixtures-and-separation.pdf` | 5 | Exploring Mixtures and their Separation | chemistry |
+| **`ch06-how-forces-affect-motion.pdf`** | **6** | **How Forces Affect Motion** | **physics** |
+| **`ch07-work-energy-simple-machines.pdf`** | **7** | **Work, Energy, and Simple Machines** | **physics** |
+| `ch08-journey-inside-the-atom.pdf` | 8 | Journey Inside the Atom | chemistry |
+| `ch09-atomic-foundations-of-matter.pdf` | 9 | Atomic Foundations of Matter | chemistry |
+| **`ch10-sound-waves.pdf`** | **10** | **Sound Waves: Characteristics and Applications** | **physics** |
+| `ch11-reproduction.pdf` | 11 | Reproduction: How Life Continues | biology |
+| `ch12-patterns-in-life.pdf` | 12 | Patterns in Life: Diversity and Classification | biology |
+| `ch13-earth-as-a-system.pdf` | 13 | Earth as a System: Energy, Matter, and Life | earth/interdisciplinary |
 
-## Coverage gap — read this
+The **physics** chapters (4, 6, 7, 10) are the ones referenced in `review/study-references.md`
+(tags NCERT04 / 06 / 07 / 10). Chapters 8–9 (atomic structure) are useful for the atom topic
+(g9‑28/29) as an alternative to Siyavula.
 
-The 2026 NCERT Class 9 book has **no standalone chapter** for several Cambridge physics
-topics. NCERT covers roughly **half** the checklist. Not covered here:
+## What this edition does and doesn't cover (physics)
 
-- **Light** — reflection, refraction, dispersion, colour (8Ps.01–04)
-- **Electricity & magnetism** — circuits, current/voltage/resistance, magnets, electromagnets (all 7Pe/8Pe/9Pe)
-- **Heat & thermal transfer** — heat vs temperature, conduction/convection/radiation, evaporation (9Pf.02, 9Pf.04–06)
-- **Pressure & density detail** (8Pf.05–07, parts of 9Pf.01)
-
-For those topics use the **Cambridge Learner's Book 9** (see `../SOURCES.md`) or another
-reference. The diagnostic in `review/checklist.md` flags exactly which topics these are.
+Covers: **motion** (ch4), **forces & Newton's laws & momentum** (ch6), **work/energy/power &
+simple machines** (ch7), **sound & waves** (ch10). It has **no standalone chapter** for
+**light/optics, electricity & magnetism, heat/thermal transfer, or pressure** — for those use
+CK‑12, Siyavula, or the Cambridge Stage books (see `../SOURCES.md` and `review/study-references.md`).

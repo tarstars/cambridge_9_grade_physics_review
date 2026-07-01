@@ -56,12 +56,13 @@ for reference; use at your own discretion.
 ## 3. Free, fully-legal full-text fallback (different curriculum) — DOWNLOADED
 
 **NCERT Class 9 Science** (Indian government curriculum) is openly and legally published. Not
-Cambridge, but clearly written and free. I've downloaded the **physics chapters** of the
-current **2026 edition** into:
+Cambridge, but clearly written and free. The **complete 2026‑edition book** (13 chapters +
+prelims) is downloaded into `docs/textbook/ncert-class9-physics/` — see that folder's
+`README.md` for the full chapter list. The **physics** chapters are:
 
 ```
-docs/textbook/ncert-class9-physics/   (see its README.md for the chapter→topic map)
-  ch04-describing-motion.pdf
+docs/textbook/ncert-class9-physics/
+  ch04-describing-motion.pdf            (+ the other 9 chapters: bio/chem/earth)
   ch06-how-forces-affect-motion.pdf
   ch07-work-energy-simple-machines.pdf
   ch10-sound-waves.pdf
