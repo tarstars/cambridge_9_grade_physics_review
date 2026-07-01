@@ -1,4 +1,6 @@
-# 8‑week plan — physics foundation before Grade 10
+# 8‑week plan · Strategy A — quick‑wins first
+
+> Alternative: [`plan-by-topic.md`](plan-by-topic.md) clears the 0s by large topic instead.
 
 Built from the baseline (`results.json`, 53/160). Runs ~early July → end of August, one **2‑hour
 discussion** per week plus **self‑study during the week**. "Read" locations are in

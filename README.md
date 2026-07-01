@@ -21,7 +21,8 @@ docs/textbook/   SOURCES.md                                 ← where to get tex
 assessment_tool/                                            ← the diagnostic web app (run it; see its README)
 review/          checklist.md, question-sheet.md            ← the quick Lower-Secondary (foundation) diagnostic
                  study-references.md                        ← where to read each weak topic (file + chapter/section + page)
-                 weekly-plan.md                             ← 8-week schedule sequencing the weak topics into 2h sessions
+                 weekly-plan.md                             ← 8-week plan, Strategy A: quick-wins first
+                 plan-by-topic.md                           ← 8-week plan, Strategy B: clear the 0s by large topic
 README.md        this file
 ```
 
