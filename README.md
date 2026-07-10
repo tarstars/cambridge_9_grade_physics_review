@@ -23,6 +23,7 @@ review/          checklist.md, question-sheet.md            ← the quick Lower-
                  study-references.md                        ← where to read each weak topic (file + chapter/section + page)
                  weekly-plan.md                             ← 8-week plan, Strategy A: quick-wins first
                  plan-by-topic.md                           ← 8-week plan, Strategy B: clear the 0s by large topic
+                 topics-to-master.pdf                       ← printable checklist of the weak topics (make-topics-pdf.py regenerates it)
 README.md        this file
 ```
 
