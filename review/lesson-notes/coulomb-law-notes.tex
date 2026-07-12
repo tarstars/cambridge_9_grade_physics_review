@@ -1,0 +1,132 @@
+% From Nothing to Coulomb's Law — lesson notes (12 July 2026)
+% Build:  pdflatex -jobname=2026-07-12-coulomb-law-notes coulomb-law-notes.tex
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=2.2cm,bottom=2.4cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{tcolorbox}
+\usepackage{url}
+
+\definecolor{accent}{HTML}{2F6FED}
+\definecolor{muted}{HTML}{5B6473}
+\definecolor{ink}{HTML}{1F2430}
+\definecolor{boxbg}{HTML}{F2F6FF}
+\definecolor{rule}{HTML}{E2E5EA}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyfoot[L]{\small\color{muted} From Nothing to Coulomb's Law --- lesson notes}
+\fancyfoot[R]{\small\color{muted} Page \thepage}
+
+\newcommand{\nsec}[1]{\vspace{8pt}\par{\color{accent}\large\bfseries #1}\par\vspace{2pt}}
+
+\begin{document}\color{ink}
+
+{\huge\bfseries From Nothing to Coulomb's Law}\\[4pt]
+{\color{muted} Electricity --- lesson notes \;\textperiodcentered\; discussion of 12 July 2026 \;\textperiodcentered\; Dad's notes, corrected and extended}\\[6pt]
+{\color{rule}\rule{\linewidth}{0.9pt}}
+
+\nsec{The chain of ideas}
+\begin{enumerate}[label=\textcolor{accent}{\textbf{\arabic*.}}, leftmargin=1.9em, itemsep=2.5pt, topsep=2pt]
+  \item \textbf{Everything is made of particles.}\\
+        {\small\color{muted} Matter is made of atoms, and atoms are made of protons, neutrons and electrons.}
+  \item \textbf{Electric charge is a property of a particle.}\\
+        {\small\color{muted} Just as a particle has mass, it can carry charge. Charge is measured in coulombs (C).}
+  \item \textbf{Particles can be positive, negative, or neutral.}\\
+        {\small\color{muted} The proton is positive, the electron is negative, the neutron is neutral.}
+  \item \textbf{Charge is quantised: it comes in steps of the elementary charge $e$.}\\
+        {\small\color{muted} Every observed charge is a whole-number multiple of $e$. The proton carries exactly $+e$
+        and the electron exactly $-e$. (Fine print: quarks carry $\pm e/3$ and $\pm 2e/3$, but they are never seen alone.)}
+  \item \textbf{Charged particles interact: they attract or repel each other.}\\
+        {\small\color{muted} Neutral particles feel no electric force.}
+  \item \textbf{Like charges repel; unlike charges attract.}\\
+        {\small\color{muted} $+$ and $+$ push apart, $-$ and $-$ push apart, $+$ and $-$ pull together.}
+  \item \textbf{The net charge of a body counts its imbalance of particles: $Q = (N_{+} - N_{-})\,e$.}\\
+        {\small\color{muted} $N_{+}$ = number of positive charges (protons), $N_{-}$ = number of negative ones
+        (electrons). Most bodies have $N_{+} \approx N_{-}$, so they are neutral.}
+  \item \textbf{Charge is conserved.}\\
+        {\small\color{muted} Charge is never created or destroyed --- it only moves from one body to another
+        (e.g.\ rubbing a balloon moves electrons onto it).}
+  \item \textbf{Coulomb's law tells us how strong the force is.}\\
+        {\small\color{muted} See the box below --- the climax of the chain.}
+\end{enumerate}
+
+\begin{tcolorbox}[colback=boxbg, colframe=accent, boxrule=0.9pt, arc=2.5mm,
+                  left=10pt, right=10pt, top=7pt, bottom=7pt,
+                  title={\large\bfseries Coulomb's law}, coltitle=white,
+                  before skip=14pt]
+\[
+  F \;=\; k\,\frac{|q_1|\,|q_2|}{r^{2}}
+  \qquad\text{with}\qquad
+  k \;=\; \frac{1}{4\pi\varepsilon_0} \;\approx\; 8.99\times 10^{9}\ \mathrm{N\,m^{2}/C^{2}}
+\]
+\begin{itemize}[leftmargin=1.4em, itemsep=1.5pt, topsep=3pt]
+  \item $q_1$, $q_2$ --- the two charges (in coulombs); $r$ --- the distance between them (in metres).
+        Valid for \textbf{point charges} (small compared with $r$).
+  \item The force acts \textbf{along the line joining the charges}: like charges are pushed apart,
+        unlike charges pulled together. Both charges feel the \textbf{same} magnitude of force, in
+        opposite directions (Newton's third law).
+  \item \textbf{Inverse square:} double the distance $\Rightarrow$ one quarter of the force.
+\end{itemize}
+\smallskip
+\textbf{Worked example.} Two charges of $1\,\mu$C each, $10\ \mathrm{cm}$ apart:
+\[
+  F \;=\; 8.99\times 10^{9} \cdot \frac{\left(10^{-6}\right)^{2}}{(0.1)^{2}}
+  \;\approx\; 0.9\ \mathrm{N}
+  \quad\text{--- about the weight of a small apple.}
+\]
+{\small\color{muted} Scale check: two charges of $1$ C at $1$ m would push with $9\times10^{9}$ N
+($\approx$ the weight of 900\,000 tonnes) --- that is why real charges are microcoulombs.}
+\end{tcolorbox}
+
+% keep the heading together with its table
+\par\noindent\begin{minipage}{\linewidth}
+\nsec{Constants worth remembering}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{Quantity} & \textbf{Symbol} & \textbf{Value} & \textbf{Note}\\
+\midrule
+Elementary charge    & $e$    & $1.602\times10^{-19}$ C  & {\small\color{muted} exact: $1.602\,176\,634\times10^{-19}$ C}\\
+Electron charge      & $-e$   & $-1.602\times10^{-19}$ C & {\small\color{muted} proton: $+e$}\\
+Coulomb constant     & $k = 1/(4\pi\varepsilon_0)$ & $8.99\times10^{9}\ \mathrm{N\,m^{2}/C^{2}}$ & {\small\color{muted} remember as $\approx 9\times10^{9}$}\\
+Vacuum permittivity  & $\varepsilon_0$ & $8.854\times10^{-12}\ \mathrm{C^{2}/(N\,m^{2})}$ & {\small\color{muted} the same thing as F/m}\\
+Charges in 1 coulomb & $1\,\mathrm{C}/e$ & $6.24\times10^{18}$ & {\small\color{muted} 1 C is a \emph{huge} charge}\\
+Electron mass        & $m_e$  & $9.11\times10^{-31}$ kg  & {\small\color{muted} proton is ${\approx}1836\times$ heavier}\\
+\bottomrule
+\end{tabular}
+\end{minipage}
+
+\nsec{Where to read (from our archive)}
+\begin{itemize}[leftmargin=1.2em, itemsep=3pt, topsep=2pt]
+  \item \textbf{Siyavula, Physical Sciences Gr 10} ---
+        {\small\path{docs/textbook/siyavula-physical-sciences/Gr10_PhysicalSciences_Learner_Eng.pdf}}\\
+        {\small ch~16 \emph{Electrostatics} --- \S16.2 Two kinds of charge (PDF p.\,276),
+        \S16.3 Conservation of charge (PDF p.\,282), \S16.4 Quantisation of charge (PDF p.\,284).
+        Closest match to these notes.}
+  \item \textbf{CK-12, Physical Science Workbook} ---
+        {\small\path{docs/textbook/ck12-physical-science/CK-12-Physical-Science-MS-Workbook-with-Answers.pdf}}\\
+        {\small lesson 23.1 \emph{Electric Charge} (printed p.\,276 $\approx$ PDF p.\,283) ---
+        practice worksheets; answers in ch~26.23 (printed p.\,417).}
+  \item \textbf{NCERT, Class 9 Science} ---
+        {\small\path{docs/textbook/ncert-class9-physics/other-chapters/ch08-journey-inside-the-atom.pdf}}\\
+        {\small \S8.2--8.6 (PDF pp.\,2--12) --- protons \& electrons, atomic number: why atoms are
+        neutral and where the charges sit.}
+  \item \textbf{Cambridge Lower Secondary, Stage 7} ---
+        {\small\path{docs/textbook/cambridge/Cambridge_Lower_Secondary_Science_2ed_7_Learners_book.pdf}}\\
+        {\small Unit 9, \S9.1 \emph{Flow of electricity} ($\approx$ p.\,287) --- moving charge $=$ current:
+        the next step after these notes.}
+\end{itemize}
+
+{\small\color{muted} Full quantitative treatment: \textbf{Siyavula Grade 11} (free, openly licensed) --- easy to add to the archive.}
+
+\end{document}
