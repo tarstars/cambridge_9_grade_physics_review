@@ -4,3 +4,7 @@
 # Python
 __pycache__/
 *.pyc
+
+# Copyrighted commercial textbooks — kept out of git deliberately
+# (also contains a 262 MB file, over GitHub's 100 MB hard limit)
+docs/textbook/cambridge/

@@ -24,6 +24,7 @@ review/          checklist.md, question-sheet.md            ← the quick Lower-
                  weekly-plan.md                             ← 8-week plan, Strategy A: quick-wins first
                  plan-by-topic.md                           ← 8-week plan, Strategy B: clear the 0s by large topic
                  topics-to-master.pdf                       ← printable checklist of the weak topics (make-topics-pdf.py regenerates it)
+                 lesson-notes/                              ← per-lesson notes PDFs (corrected & extended), e.g. Coulomb's law
 README.md        this file
 ```
 
