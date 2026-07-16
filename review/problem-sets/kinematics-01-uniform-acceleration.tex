@@ -1,5 +1,9 @@
 % Problem set 1: uniformly accelerated straight-line motion (15 July 2026)
-% Build:  pdflatex -jobname=2026-07-15-kinematics-uniform-acceleration kinematics-01-uniform-acceleration.tex
+% One source, two documents:
+%   for son: pdflatex -jobname=2026-07-15-kinematics-uniform-acceleration-for-son kinematics-01-uniform-acceleration.tex
+%   for dad: pdflatex -jobname=2026-07-15-kinematics-uniform-acceleration-for-dad "\def\isdad{1}\input{kinematics-01-uniform-acceleration.tex}"
+% The son's copy omits the [given -> find] tags and the missing-variable analysis:
+% identifying the combination is part of the training.
 \documentclass[11pt,a4paper]{article}
 \usepackage[margin=2.2cm,bottom=2.4cm]{geometry}
 \usepackage[T1]{fontenc}
@@ -21,15 +25,24 @@
 \definecolor{boxbg}{HTML}{F2F6FF}
 \definecolor{rule}{HTML}{E2E5EA}
 
+\ifdefined\isdad
+  \newcommand{\copyname}{Dad's copy: tags, answers, references}
+  \newcommand{\footname}{Dad's copy}
+  \newcommand{\given}[1]{\hfill{\small\color{muted}[#1]}}
+\else
+  \newcommand{\copyname}{student's copy}
+  \newcommand{\footname}{student's copy}
+  \newcommand{\given}[1]{}
+\fi
+
 \pagestyle{fancy}
 \fancyhf{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0.4pt}
-\fancyfoot[L]{\small\color{muted} Uniformly accelerated motion --- problem set 1}
+\fancyfoot[L]{\small\color{muted} Uniformly accelerated motion --- problem set 1 (\footname)}
 \fancyfoot[R]{\small\color{muted} Page \thepage}
 
 \newcommand{\nsec}[1]{\vspace{9pt}\par{\color{accent}\large\bfseries #1}\par\vspace{2pt}}
-\newcommand{\given}[1]{\hfill{\small\color{muted}[#1]}}
 \newcommand{\ms}{\ \mathrm{m/s}}
 \newcommand{\mss}{\ \mathrm{m/s^2}}
 
@@ -37,7 +50,7 @@
 
 {\huge\bfseries Uniformly Accelerated Motion}\\[4pt]
 {\color{muted} Kinematics of straight-line motion with constant acceleration
-\;\textperiodcentered\; problem set 1 \;\textperiodcentered\; 15 July 2026}\\[6pt]
+\;\textperiodcentered\; problem set 1 \;\textperiodcentered\; \copyname}\\[6pt]
 {\color{rule}\rule{\linewidth}{0.9pt}}
 
 \begin{tcolorbox}[colback=boxbg, colframe=accent, boxrule=0.9pt, arc=2.5mm,
@@ -55,6 +68,7 @@ acceleration $a(t)$ is a horizontal line, $v(t)$ is a straight line with slope $
 and $x(t)$ is a parabola (bending up if $a>0$, down if $a<0$). Use $g = 10\mss$.
 \smallskip
 
+\ifdefined\isdad
 \textbf{The toolbox} --- four equations, each \emph{missing} one quantity:
 \begin{center}
 \renewcommand{\arraystretch}{1.5}
@@ -70,8 +84,27 @@ and $x(t)$ is a parabola (bending up if $a>0$, down if $a<0$). Use $g = 10\mss$.
 \end{tabular}
 \end{center}
 {\small\color{muted} $u$ --- initial velocity, $v$ --- final velocity, $a$ --- acceleration
-(constant), $s$ --- displacement, $t$ --- time. Each problem below hands you a different
-combination of these and asks for the rest.}
+(constant), $s$ --- displacement, $t$ --- time. Each problem hands a different combination
+of these and asks for the rest. \textbf{Only in this copy:} the ``Missing'' column and the
+$[\text{given} \to \text{find}]$ tags on the problems --- working that out himself is part
+of the training.}
+\else
+\textbf{The toolbox} --- the four equations of uniform acceleration:
+\begin{center}
+\renewcommand{\arraystretch}{1.5}
+\begin{tabular}{@{}ll@{}}
+\toprule
+(i)   & $v = u + at$\\
+(ii)  & $s = ut + \tfrac{1}{2}at^{2}$\\
+(iii) & $v^{2} = u^{2} + 2as$\\
+(iv)  & $s = \dfrac{(u+v)}{2}\,t$\\
+\bottomrule
+\end{tabular}
+\end{center}
+{\small\color{muted} $u$ --- initial velocity, $v$ --- final velocity, $a$ --- acceleration
+(constant), $s$ --- displacement, $t$ --- time. Choosing the right equation for each
+problem is part of the task.}
+\fi
 \end{tcolorbox}
 
 \nsec{Problems}
@@ -144,10 +177,11 @@ to Problem~0 in one line. \given{derivation}
 
 \end{enumerate}
 
-% ---------------- answers (separate sheet for Dad) ----------------
+\ifdefined\isdad
+% ---------------- answers (dad only) ----------------
 \clearpage
 \par\noindent\begin{minipage}{\linewidth}
-\nsec{Answers (for Dad)}
+\nsec{Answers}
 {\small
 \begin{enumerate}[label=\textbf{\arabic*.}, leftmargin=1.7em, itemsep=1pt, topsep=1pt, start=0]
   \item $|a| = \dfrac{v^{2}}{2L}$ directed against the motion; \; $t = \dfrac{2L}{v}$.
@@ -175,7 +209,7 @@ $v(t)$ straight, crossing zero exactly at the stopping/turn-around moment; $x(t)
 parabola with the right bend, horizontal tangent where $v=0$, never jumping.}}
 \end{minipage}
 
-% ---------------- references ----------------
+% ---------------- references (dad only) ----------------
 \nsec{More practice from our archive}
 \begin{itemize}[leftmargin=1.2em, itemsep=3pt, topsep=2pt]
   \item \textbf{Siyavula, Physical Sciences Gr 10} ---
@@ -195,5 +229,6 @@ parabola with the right bend, horizontal tangent where $v=0$, never jumping.}}
         \emph{Acceleration} (PDF p.\,164), Unit-4 \emph{Motion and Forces} test
         (PDF p.\,353); answers are in the same file.}
 \end{itemize}
+\fi
 
 \end{document}
