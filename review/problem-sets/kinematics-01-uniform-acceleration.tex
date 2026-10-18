@@ -2,8 +2,8 @@
 % One source, two documents:
 %   for son: pdflatex -jobname=2026-07-15-kinematics-uniform-acceleration-for-son kinematics-01-uniform-acceleration.tex
 %   for dad: pdflatex -jobname=2026-07-15-kinematics-uniform-acceleration-for-dad "\def\isdad{1}\input{kinematics-01-uniform-acceleration.tex}"
-% The son's copy omits the [given -> find] tags and the missing-variable analysis:
-% identifying the combination is part of the training.
+% The son's copy omits the [given -> find] tags:
+% identifying the known and sought quantities is part of the training.
 \documentclass[11pt,a4paper]{article}
 \usepackage[margin=2.2cm,bottom=2.4cm]{geometry}
 \usepackage[T1]{fontenc}
@@ -17,7 +17,7 @@
 \usepackage{fancyhdr}
 \usepackage{tcolorbox}
 \usepackage{tikz}
-\usepackage{url}
+\usepackage{xurl}
 
 \definecolor{accent}{HTML}{2F6FED}
 \definecolor{muted}{HTML}{5B6473}
@@ -28,7 +28,7 @@
 \ifdefined\isdad
   \newcommand{\copyname}{Dad's copy: tags, answers, references}
   \newcommand{\footname}{Dad's copy}
-  \newcommand{\given}[1]{\hfill{\small\color{muted}[#1]}}
+  \newcommand{\given}[1]{\par\noindent\hfill{\small\color{muted}[#1]}\par}
 \else
   \newcommand{\copyname}{student's copy}
   \newcommand{\footname}{student's copy}
@@ -50,7 +50,8 @@
 
 {\huge\bfseries Uniformly Accelerated Motion}\\[4pt]
 {\color{muted} Kinematics of straight-line motion with constant acceleration
-\;\textperiodcentered\; problem set 1 \;\textperiodcentered\; \copyname}\\[6pt]
+\;\textperiodcentered\; problem set 1 \;\textperiodcentered\; 15 July 2026}\\[2pt]
+{\color{muted}\copyname}\\[6pt]
 {\color{rule}\rule{\linewidth}{0.9pt}}
 
 \begin{tcolorbox}[colback=boxbg, colframe=accent, boxrule=0.9pt, arc=2.5mm,
@@ -64,47 +65,31 @@ For \textbf{every} problem, including the warm-up:
         key values marked (initial/final speeds, times, distances).
 \end{enumerate}
 Graphs need not be to exact scale, but the \emph{shapes} must be right: with constant
-acceleration $a(t)$ is a horizontal line, $v(t)$ is a straight line with slope $a$,
-and $x(t)$ is a parabola (bending up if $a>0$, down if $a<0$). Use $g = 10\mss$.
+acceleration $a(t)=a_0$ is a horizontal line, $v(t)$ is a straight line with slope $a_0$,
+and $x(t)$ is a parabola (bending up if $a_0>0$, down if $a_0<0$). Use $g = 10\mss$.
 \smallskip
 
-\ifdefined\isdad
-\textbf{The toolbox} --- four equations, each \emph{missing} one quantity:
-\begin{center}
-\renewcommand{\arraystretch}{1.5}
-\begin{tabular}{@{}llll@{}}
-\toprule
-& \textbf{Equation} & \textbf{Missing} & \textbf{Use when\ldots}\\
-\midrule
-(i)   & $v = u + at$                    & $s$ & distance does not matter\\
-(ii)  & $s = ut + \tfrac{1}{2}at^{2}$   & $v$ & final speed does not matter\\
-(iii) & $v^{2} = u^{2} + 2as$           & $t$ & time does not matter\\
-(iv)  & $s = \dfrac{(u+v)}{2}\,t$       & $a$ & acceleration does not matter\\
-\bottomrule
-\end{tabular}
-\end{center}
-{\small\color{muted} $u$ --- initial velocity, $v$ --- final velocity, $a$ --- acceleration
-(constant), $s$ --- displacement, $t$ --- time. Each problem hands a different combination
-of these and asks for the rest. \textbf{Only in this copy:} the ``Missing'' column and the
-$[\text{given} \to \text{find}]$ tags on the problems --- working that out himself is part
-of the training.}
-\else
-\textbf{The toolbox} --- the four equations of uniform acceleration:
+\textbf{The basis} --- constant acceleration and the resulting velocity and position:
 \begin{center}
 \renewcommand{\arraystretch}{1.5}
 \begin{tabular}{@{}ll@{}}
 \toprule
-(i)   & $v = u + at$\\
-(ii)  & $s = ut + \tfrac{1}{2}at^{2}$\\
-(iii) & $v^{2} = u^{2} + 2as$\\
-(iv)  & $s = \dfrac{(u+v)}{2}\,t$\\
+(i)   & $a = a_0 = \mathrm{const}$\\
+(ii)  & $v = v_0 + a_0t$\\
+(iii) & $x = x_0 + v_0t + \tfrac{1}{2}a_0t^{2}$\\
 \bottomrule
 \end{tabular}
 \end{center}
-{\small\color{muted} $u$ --- initial velocity, $v$ --- final velocity, $a$ --- acceleration
-(constant), $s$ --- displacement, $t$ --- time. Choosing the right equation for each
-problem is part of the task.}
+{\small\color{muted} $x_0$ and $v_0$ are the position and velocity at $t=0$; $a_0$ is the
+constant acceleration; $x=x(t)$ and $v=v(t)$. Choose the positive direction first, so
+the signs of $v_0$ and $a_0$ follow from that choice.
+\ifdefined\isdad
+\textbf{Only in this copy:} the $[\text{given} \to \text{find}]$ tags on the problems ---
+working that out himself is part of the training.
+\else
+Identifying the known and sought quantities is part of the task.
 \fi
+}
 \end{tcolorbox}
 
 \nsec{Problems}
@@ -113,39 +98,39 @@ problem is part of the task.}
                   itemsep=7pt, topsep=3pt, start=0]
 
 \item \textbf{Warm-up (done in class --- now add the graphs).}
-A train enters a station at speed $v$. The station has length $L$, and the train stops
+A train enters a station at speed $v_0$. The station has length $L$, and the train stops
 exactly at its far end, decelerating uniformly. Treating the train as a point, find the
-acceleration and the stopping time. \given{given $u,\,v{=}0,\,s$ \;$\to$\; $a,\,t$}
+acceleration and the stopping time. \given{given $v_0,\,x{=}L,\,v{=}0$ \;$\to$\; $a_0,\,t$}
 
 \item \textbf{Away from the lights.}
 A car starts from rest and accelerates uniformly at $2\mss$ for $6\ \mathrm{s}$.
-Find its final speed and the distance covered. \given{given $u{=}0,\,a,\,t$ \;$\to$\; $v,\,s$}
+Find its final speed and the distance covered. \given{given $v_0{=}0,\,a_0,\,t$ \;$\to$\; $v,\,x$}
 
 \item \textbf{Between stations.}
 A train speeds up from $10\ms$ to $25\ms$ in $30\ \mathrm{s}$ at constant acceleration.
-Find the acceleration and the distance travelled. \given{given $u,\,v,\,t$ \;$\to$\; $a,\,s$}
+Find the acceleration and the distance travelled. \given{given $v_0,\,v,\,t$ \;$\to$\; $a_0,\,x$}
 
 \item \textbf{The cyclist.}
 A cyclist moving at $6\ms$ accelerates uniformly at $2\mss$ along a $16\ \mathrm{m}$
 stretch of road. Find his speed at the end of the stretch and the time it took.
-\given{given $u,\,a,\,s$ \;$\to$\; $v,\,t$}
+\given{given $v_0,\,a_0,\,x$ \;$\to$\; $v,\,t$}
 
 \item \textbf{Braking distance.}
 A car travels at $20\ms$. The driver brakes, and the car decelerates uniformly at
 $5\mss$. \;(a) How long and how far does it travel before stopping?
 \;(b) If the initial speed were doubled ($40\ms$), how far would it travel? How many
-times longer is that? \given{given $u,\,v{=}0,\,a$ \;$\to$\; $t,\,s$}
+times longer is that? \given{given $v_0,\,v{=}0,\,a_0$ \;$\to$\; $t,\,x$}
 
 \item \textbf{Off the bridge.}
 A stone is released from rest from a bridge and hits the water after $2\ \mathrm{s}$.
 How high is the bridge, and how fast does the stone hit the water? (Ignore air
-resistance.) \given{given $u{=}0,\,a{=}g,\,t$ \;$\to$\; $v,\,s$}
+resistance.) \given{given $v_0{=}0,\,a_0{=}g,\,t$ \;$\to$\; $v,\,x$}
 
 \item \textbf{Straight up.}
 A ball is thrown straight up at $15\ms$. \;(a) How long does it take to reach the top?
 \;(b) What is the maximum height? \;(c) When does it return to the hand, and with what
 velocity? --- On your graphs, pay special attention: what is the acceleration \emph{at
-the very top}? \given{given $u,\,a{=}-g$ \;$\to$\; $t,\,s$, symmetry}
+the very top}? \given{given $v_0,\,a_0{=}-g$ \;$\to$\; $t,\,x,\,v$}
 
 \item \textbf{The whole trip (graphs first!).}
 A bus leaves a stop: it accelerates uniformly from rest to $12\ms$ in $4\ \mathrm{s}$,
@@ -157,7 +142,7 @@ distance for each phase, the total distance, and the average speed of the trip.
 \item \textbf{Read the graph.}
 The $v$--$t$ graph of a tram is shown. From the graph, find the initial speed, the
 acceleration (slope), and the distance travelled (area under the graph). Then sketch the
-matching $a(t)$ and $x(t)$. \given{given graph \;$\to$\; $u,\,a,\,s$}
+matching $a(t)$ and $x(t)$. \given{given graph \;$\to$\; $v_0,\,a_0,\,x$}
 
 \begin{center}
 \begin{tikzpicture}[x=0.95cm,y=0.42cm]
@@ -170,9 +155,9 @@ matching $a(t)$ and $x(t)$. \given{given graph \;$\to$\; $u,\,a,\,s$}
 \end{tikzpicture}
 \end{center}
 
-\item \textbf{Challenge: where equation (iv) comes from.}
+\item \textbf{Challenge: a useful consequence.}
 Using a $v$--$t$ graph for uniform acceleration, show that the displacement equals the
-area of a trapezium: $s = \tfrac{1}{2}(u+v)\,t$. Then use this to re-derive your answer
+area of a trapezium: $x-x_0 = \tfrac{1}{2}(v_0+v)\,t$. Then use this to re-derive your answer
 to Problem~0 in one line. \given{derivation}
 
 \end{enumerate}
@@ -184,47 +169,52 @@ to Problem~0 in one line. \given{derivation}
 \nsec{Answers}
 {\small
 \begin{enumerate}[label=\textbf{\arabic*.}, leftmargin=1.7em, itemsep=1pt, topsep=1pt, start=0]
-  \item $|a| = \dfrac{v^{2}}{2L}$ directed against the motion; \; $t = \dfrac{2L}{v}$.
-  \item $v = 12\ms$; \; $s = 36\ \mathrm{m}$.
-  \item $a = 0.5\mss$; \; $s = 525\ \mathrm{m}$ \;(via eq.~(iv): $17.5 \times 30$).
-  \item $v = \sqrt{6^{2} + 2\cdot 2\cdot 16} = 10\ms$; \; $t = 2\ \mathrm{s}$.
-  \item (a) $t = 4\ \mathrm{s}$, $s = 40\ \mathrm{m}$; \;(b) $160\ \mathrm{m}$ --- $4\times$
-        longer: braking distance grows as $v^{2}$ (eq.~(iii)).
-  \item $h = \tfrac{1}{2}\cdot 10\cdot 2^{2} = 20\ \mathrm{m}$; \; $v = 20\ms$.
+  \item $a_0 = -\dfrac{v_0^{2}}{2L}$; \; $t = \dfrac{2L}{v_0}$.
+  \item $v = 12\ms$; \; $x = 36\ \mathrm{m}$.
+  \item $a_0 = \dfrac{25-10}{30} = 0.5\mss$; \;
+        $x = 10\cdot30 + \tfrac{1}{2}\cdot0.5\cdot30^2 = 525\ \mathrm{m}$.
+  \item $16 = 6t + t^2 \Rightarrow t = 2\ \mathrm{s}$; \;
+        $v = 6 + 2\cdot2 = 10\ms$.
+  \item (a) $t = 4\ \mathrm{s}$, $x = 40\ \mathrm{m}$; \;(b) $t = 8\ \mathrm{s}$,
+        $x = 160\ \mathrm{m}$ --- $4\times$ the braking distance.
+  \item $x = \tfrac{1}{2}\cdot 10\cdot 2^{2} = 20\ \mathrm{m}$; \; $v = 20\ms$.
   \item (a) $1.5\ \mathrm{s}$; \;(b) $11.25\ \mathrm{m}$; \;(c) returns at $3\ \mathrm{s}$
-        with $15\ms$ downward. At the top $v = 0$ but $a = -g = -10\mss$ --- the $a(t)$
+        with $15\ms$ downward. At the top $v = 0$ but $a_0 = -g = -10\mss$ --- the $a(t)$
         graph is one unbroken horizontal line.
-  \item $a_1 = +3\mss$, $s_1 = 24\ \mathrm{m}$; \; $a_2 = 0$, $s_2 = 72\ \mathrm{m}$; \;
-        $a_3 = -4\mss$, $s_3 = 18\ \mathrm{m}$. Total $114\ \mathrm{m}$ in $13\ \mathrm{s}$;
+  \item Phase 1: $a_0 = +3\mss$, $\Delta x = 24\ \mathrm{m}$; \;
+        phase 2: $a_0 = 0$, $\Delta x = 72\ \mathrm{m}$; \;
+        phase 3: $a_0 = -4\mss$, $\Delta x = 18\ \mathrm{m}$. Total $114\ \mathrm{m}$ in $13\ \mathrm{s}$;
         average speed $\approx 8.8\ms$. The $v(t)$ graph is a trapezium; its area is the
         total distance.
-  \item $u = 8\ms$; \; $a = -2\mss$; \; $s = \tfrac{1}{2}\cdot 8 \cdot 4 = 16\ \mathrm{m}$
+  \item $v_0 = 8\ms$; \; $a_0 = -2\mss$; \; $x = \tfrac{1}{2}\cdot 8 \cdot 4 = 16\ \mathrm{m}$
         (the shaded triangle). $x(t)$ is a parabola bending down, flattening out at $t=4$ s.
-  \item Trapezium with parallel sides $u$ and $v$, width $t$: area $= \tfrac{1}{2}(u+v)t$.
-        For the train: $L = \tfrac{1}{2}(v+0)\,t \Rightarrow t = 2L/v$, then
-        $a = (0-v)/t = -v^{2}/(2L)$. \;Same answers, no quadratic equations.
+  \item Trapezium with parallel sides $v_0$ and $v$, width $t$:
+        $x-x_0 = \tfrac{1}{2}(v_0+v)t$. For the train,
+        $L = \tfrac{1}{2}(v_0+0)t \Rightarrow t = 2L/v_0$, then
+        $a_0 = (0-v_0)/t = -v_0^{2}/(2L)$.
 \end{enumerate}
-\textcolor{muted}{Graph checklist for marking: $a(t)$ horizontal (negative where braking);
-$v(t)$ straight, crossing zero exactly at the stopping/turn-around moment; $x(t)$ a
-parabola with the right bend, horizontal tangent where $v=0$, never jumping.}}
+\textcolor{muted}{Graph checklist for marking: within each constant-acceleration phase,
+$a(t)$ is horizontal, $v(t)$ is straight, and $x(t)$ is a parabola with the right bend.
+At a stop or turn-around, $v=0$ and the tangent to $x(t)$ is horizontal; no graph jumps.}}
 \end{minipage}
 
 % ---------------- references (dad only) ----------------
 \nsec{More practice from our archive}
 \begin{itemize}[leftmargin=1.2em, itemsep=3pt, topsep=2pt]
-  \item \textbf{Siyavula, Physical Sciences Gr 10} ---
+  \item \textbf{Siyavula, Physical Sciences Gr 10}\\
         {\small\path{docs/textbook/siyavula-physical-sciences/Gr10_PhysicalSciences_Learner_Eng.pdf}}\\
         {\small ch~21 \emph{Motion in one dimension}: worked examples throughout
         (PDF pp.\,403--452, graph-heavy from p.\,430) and \emph{End of chapter exercises}
         (PDF pp.\,453--457) --- includes drawing and reading $x$--$t$/$v$--$t$ graphs.
         Brief solutions in ch~25 ($\approx$ PDF p.\,504).}
-  \item \textbf{NCERT, Class 9 Science} ---
+  \item \textbf{NCERT, Class 9 Science}\\
         {\small\path{docs/textbook/ncert-class9-physics/ch04-describing-motion.pdf}}\\
         {\small \S4.2 graphs of motion (PDF pp.\,9--16), \S4.3 kinematic equations
         (PDF pp.\,16--18), exercises \emph{Revise, Reflect, Refine} (PDF pp.\,21--24,
         graph question on p.\,23).}
-  \item \textbf{CK-12, Quizzes \& Tests} ---
-        {\small\path{docs/textbook/ck12-physical-science/CK-12-Physical-Science-MS-Quizzes-and-Tests-with-Answers.pdf}}\\
+  \item \textbf{CK-12, Quizzes \& Tests}\\
+        {\small\path{docs/textbook/ck12-physical-science/}\\
+        \path{CK-12-Physical-Science-MS-Quizzes-and-Tests-with-Answers.pdf}}\\
         {\small quiz 12.2 \emph{Speed and Velocity} (PDF p.\,161), quiz 12.3
         \emph{Acceleration} (PDF p.\,164), Unit-4 \emph{Motion and Forces} test
         (PDF p.\,353); answers are in the same file.}

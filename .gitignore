@@ -8,3 +8,7 @@ __pycache__/
 # Copyrighted commercial textbooks — kept out of git deliberately
 # (also contains a 262 MB file, over GitHub's 100 MB hard limit)
 docs/textbook/cambridge/
+
+# Downloaded PDFs, caches and the live SQLite database stay on each machine.
+# Portable study progress is explicitly tracked in past_papers/progress.json.
+past_papers/data/

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#174f46">
+  <title>Physics 9702 · Question bank</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/tasks.css">
+  <script src="/tasks.js" defer></script>
+</head>
+<body class="question-bank">
+  <a class="skip-link" href="#questions-section">Skip to questions</a>
+  <aside class="sidebar" aria-label="Question bank navigation">
+    <a class="brand" href="/"><span class="brand-icon">φ</span><span>Paperwork<span class="brand-sub">ONE QUESTION AT A TIME</span></span></a>
+    <div class="course"><span class="course-icon">↗</span><div><strong>Physics question bank</strong><span>Cambridge AS & A Level · 9702</span></div></div>
+    <nav id="collections" aria-label="Question collections"></nav>
+    <p class="nav-label">PHYSICS TOPICS</p>
+    <nav id="topic-nav" class="topic-nav" aria-label="Physics topics"></nav>
+    <div class="question-sidebar-footer"><a href="/papers">▤ Full papers & reference files ↗</a><button class="text-button" data-help>How question tracking works</button></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><span>YOUR STUDY SPACE <span class="breadcrumb">/ Questions</span></span><div class="top-actions"><span id="save-state" role="status"><span class="small-dot"></span> Progress saved locally</span><a class="quiet-button" href="/papers">Full papers</a><button class="quiet-button" id="restore-button">Restore</button><a class="quiet-button" href="/api/export" download>↓ Export progress</a><input type="file" accept="application/json,.json" id="restore-file" hidden></div></header>
+    <main>
+      <section class="question-intro"><div class="eyebrow">NUMBERED QUESTIONS · PHYSICS 9702</div><h1>Practice the question.<br>Master the topic.</h1><p>One numbered question per task, with its subparts kept together.<br>Browse by physics topic and track exactly what you can solve.</p></section>
+      <section class="stats" id="stats" aria-label="Question progress"></section>
+      <section id="questions-section" aria-labelledby="questions-title">
+        <div class="section-heading"><div><h2 id="questions-title">All questions</h2><span class="muted" id="result-count" role="status">Opening the question index…</span></div><label class="group-control">Group by <select id="group-by"><option value="topic">Physics topic</option><option value="document">Source paper</option><option value="year">Year</option><option value="paper">Paper type</option><option value="session">Exam session</option></select></label></div>
+        <div class="question-filters">
+          <label class="search"><span aria-hidden="true">⌕</span><input type="search" id="search" aria-label="Search question text and notes" placeholder="Search question text or your notes…"></label>
+          <label><span class="sr-only">Physics topic</span><select id="topic-filter"><option value="">All physics topics</option></select></label>
+          <label><span class="sr-only">Paper type</span><select id="paper-filter"><option value="">All paper types</option><option value="1">Paper 1 · Multiple choice</option><option value="2">Paper 2 · AS structured</option><option value="3">Paper 3 · Practical skills</option><option value="4">Paper 4 · A Level structured</option><option value="5">Paper 5 · Planning & analysis</option><option value="6">Paper 6 · Historical</option></select></label>
+          <label><span class="sr-only">Year</span><select id="year"><option value="">All years</option></select></label>
+          <label><span class="sr-only">Exam session</span><select id="session"><option value="">All sessions</option><option value="m">February / March</option><option value="s">May / June</option><option value="w">October / November</option></select></label>
+          <button id="reset-filters" class="quiet-button">Reset</button>
+        </div>
+        <div id="status-tabs" class="status-tabs" aria-label="Filter questions by progress"></div>
+        <div class="question-tools"><label><input id="select-page" type="checkbox"> Select this page</label><label><input id="review-only" type="checkbox"> Topics needing review</label><button id="index-issues" class="text-button" hidden></button></div>
+        <div id="questions" aria-busy="true"><div class="empty"><span class="loading-ring"></span><h3>Opening individual questions…</h3></div></div>
+        <nav id="pagination" class="pagination" aria-label="Question pages"></nav>
+      </section>
+      <footer class="page-footer"><span>Question progress is independent of whole-paper progress.<br><button class="text-button" data-help>How this works</button></span><span id="index-date"></span></footer>
+    </main>
+  </div>
+  <div id="bulk-bar" class="bulk-bar" hidden><strong id="selection-count"></strong><select id="bulk-status" aria-label="Progress for selected questions"><option value="to_process">To process</option><option value="know_how">Know how to solve</option><option value="solved">Solved</option><option value="unmarked">Not marked</option></select><button id="bulk-apply" class="primary-button">Apply to selected</button><button id="clear-selection" class="quiet-button">Clear</button></div>
+  <dialog id="task-dialog" class="task-dialog" aria-labelledby="task-title">
+    <form id="task-form">
+      <header class="task-dialog-header"><div><span id="task-eyebrow" class="eyebrow">NUMBERED QUESTION</span><h2 id="task-title"></h2><p id="task-source" class="muted"></p></div><button type="button" class="close-button" data-close aria-label="Close question">×</button></header>
+      <div class="task-dialog-content">
+        <div id="task-reader" class="task-reader"><div id="task-files" class="task-files"></div><div id="task-images"></div><details class="extracted-text"><summary>Extracted question text</summary><pre id="task-text"></pre></details></div>
+        <aside class="task-progress"><label class="field-label" for="task-status">Question progress</label><select id="task-status"></select><div id="topic-editor"><label class="field-label" for="primary-topic">Main physics topic</label><select id="primary-topic"></select><label class="field-label" for="extra-topics">Additional topics (optional)</label><select id="extra-topics" multiple size="4"></select><label class="confirm-topic"><input id="confirm-topics" type="checkbox"> Confirm these topics</label><button type="button" id="reset-topic" class="text-button">Use the automatic suggestion</button><p class="topic-hint" id="topic-hint"></p></div><label class="field-label" for="task-notes">Your notes</label><textarea id="task-notes" rows="5" maxlength="20000" placeholder="Your approach, mistakes, or what to revisit…"></textarea><p id="editor-message" class="muted"></p><div class="dialog-actions"><button type="button" class="quiet-button" data-close>Cancel</button><button id="save-task" type="submit" class="primary-button">Save progress</button></div></aside>
+      </div>
+    </form>
+  </dialog>
+  <dialog id="issues-dialog" aria-labelledby="issues-title"><div class="dialog-top"><span class="eyebrow">QUESTION INDEX COVERAGE</span><button class="close-button" data-close aria-label="Close coverage">×</button></div><h2 id="issues-title">Source papers to review</h2><p>These source files have missing PDFs or uncertain question boundaries. Extracted questions remain available; check the original document when using them.</p><div id="issues-list"></div></dialog>
+  <dialog id="help-dialog" aria-labelledby="help-title"><div class="dialog-top"><span class="eyebrow">ONE QUESTION AT A TIME</span><button class="close-button" data-close aria-label="Close help">×</button></div><h2 id="help-title">Track what you can solve.</h2><p>Each task is one numbered question. Structured subparts, such as 2(a) and 2(b), belong to the same task. Open a question to see its original PDF content, including diagrams and continuation pages.</p><p>Physics topics are suggested from that question’s content. You can change its main topic, add other topics, or confirm the suggestions. “Topics needing review” finds weak or missing suggestions. Topic corrections survive re-indexing.</p><p>Each question has its own <strong>To process</strong>, <strong>Know how to solve</strong>, or <strong>Solved</strong> mark and notes. A group mark is separate. “Mark all … questions” applies to all questions in that filtered group, across every results page.</p><p>Existing document marks are kept in <a href="/papers">Full papers</a>. They do not automatically mark individual questions. Export and restore include question marks, topic corrections, group marks, and existing paper progress.</p><p>Question previews are rendered locally from the downloaded PDFs. You can also open the source PDF at the exact page and use its matching mark scheme.</p><div class="dialog-actions"><button class="primary-button" data-close>Start practicing</button></div></dialog>
+  <div class="toast" id="toast" role="status" hidden></div>
+  <noscript><p class="noscript">Enable JavaScript to browse individual questions and save progress.</p></noscript>
+</body>
+</html>

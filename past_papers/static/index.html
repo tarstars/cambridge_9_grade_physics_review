@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#174f46">
+  <meta name="description" content="Your offline Cambridge Physics 9702 past-paper library and study tracker.">
+  <title>Physics 9702 · Paper library</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to papers</a>
+  <aside class="sidebar" aria-label="Library navigation">
+    <a class="brand" href="/" aria-label="Physics paper library home"><span class="brand-icon">φ</span><span>Paperwork<span class="brand-sub">A LITTLE PRACTICE, EVERY DAY</span></span></a>
+    <div class="course"><span class="course-icon">↗</span><div><strong>Physics</strong><span>Cambridge AS & A Level · 9702</span></div><span class="course-dot"></span></div>
+    <p class="nav-label">YOUR LIBRARY</p>
+    <nav id="collections"><span class="muted">Loading library…</span></nav>
+    <p class="nav-label">BY PAPER</p>
+    <nav id="paper-nav" aria-label="Paper types"></nav>
+    <div class="sidebar-bottom">
+      <div class="offline-heading"><span class="small-dot"></span><strong>Ready for offline study</strong></div>
+      <p id="download-count">Checking your downloads…</p>
+      <div class="meter"><span id="download-meter"></span></div>
+      <a href="https://pastpapers.papacambridge.com/papers/caie/as-and-a-level-physics-9702" target="_blank" rel="noopener noreferrer" class="source-link">Papers from PapaCambridge ↗</a>
+      <button class="text-button" id="about-button">How this library works</button>
+    </div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><span>YOUR STUDY SPACE <span class="breadcrumb">/ Physics 9702</span></span><div class="top-actions"><span id="save-state" role="status"><span class="small-dot"></span> Progress saved locally</span><button class="quiet-button" id="restore-button">Restore</button><a class="quiet-button" href="/api/export" download>↓ Export progress</a><input id="restore-file" type="file" accept="application/json,.json" hidden></div></header>
+    <main id="main">
+      <section class="intro"><div><div class="eyebrow">THE PHYSICS COLLECTION <span>9702</span></div><h1>Your next paper.<br>Your next breakthrough.</h1><p>A focused space to practice, keep track, and build confidence.</p></div><div class="intro-aside"><svg viewBox="0 0 160 118" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.3"><ellipse cx="80" cy="59" rx="68" ry="23" transform="rotate(-30 80 59)"/><ellipse cx="80" cy="59" rx="68" ry="23" transform="rotate(30 80 59)"/><ellipse cx="80" cy="59" rx="68" ry="23" transform="rotate(90 80 59)"/></g><circle cx="80" cy="59" r="6" fill="currentColor"/><circle cx="137" cy="26" r="4" fill="#c77b46"/><circle cx="80" cy="108" r="4" fill="#c77b46"/></svg><span>Small steps. Strong foundations.</span></div></section>
+      <section class="stats" aria-label="Study progress" id="stats"></section>
+      <section class="library-section" aria-labelledby="library-title">
+        <div class="section-heading"><div><h2 id="library-title">All practice papers</h2><span id="result-count" class="muted" role="status">Loading your collection…</span></div><label class="group-control">Group by <select id="group-by" aria-label="Group papers by"><option value="year">Year</option><option value="paper">Paper type</option><option value="session">Exam session</option><option value="folder">Source collection</option></select></label></div>
+        <div class="filters"><label class="search"><span aria-hidden="true">⌕</span><input type="search" id="search" placeholder="Search papers, topics, or your notes…" aria-label="Search papers"></label><label><span class="sr-only">Year</span><select id="year"><option value="">All years</option></select></label><label><span class="sr-only">Exam session</span><select id="session"><option value="">All sessions</option><option value="m">February / March</option><option value="s">May / June</option><option value="w">October / November</option></select></label><button class="quiet-button" id="reset-filters" title="Clear filters">Reset</button></div>
+        <div class="status-tabs" id="status-tabs" aria-label="Filter by study status"></div>
+        <div class="filter-note" id="filter-note" hidden></div>
+        <div id="papers" aria-busy="true"><div class="empty"><span class="loading-ring"></span><h3>Opening your paper library…</h3></div></div>
+        <button id="show-more" class="show-more" hidden>Show more papers ↓</button>
+      </section>
+      <footer class="page-footer"><span>Practice with purpose. Mark your progress.<br><button class="text-button" id="footer-help">How this library works</button></span><span id="catalogue-date"></span></footer>
+    </main>
+  </div>
+  <div class="bulk-bar" id="bulk-bar" hidden><strong id="selection-count"></strong><label><span class="sr-only">Status for selected papers</span><select id="bulk-status"><option value="to_process">To process</option><option value="know_how">Know how to solve</option><option value="solved">Solved</option><option value="unmarked">Not marked</option></select></label><button id="bulk-apply" class="primary-button">Apply to selected</button><button id="clear-selection" class="quiet-button">Clear</button></div>
+  <dialog id="details-dialog" aria-labelledby="details-title"><form id="notes-form"><div class="dialog-top"><span class="eyebrow" id="details-eyebrow">PAPER NOTES</span><button type="button" class="close-button" data-close aria-label="Close notes">×</button></div><h2 id="details-title"></h2><p id="details-subtitle" class="muted"></p><div id="details-files" class="details-files"></div><label class="field-label" for="detail-status">Study status</label><select id="detail-status"></select><label class="field-label" for="notes">Your notes</label><textarea id="notes" rows="6" maxlength="20000" placeholder="What went well? What needs another look?"></textarea><p id="notes-message" class="muted"></p><div class="dialog-actions"><button type="button" class="quiet-button" data-close>Cancel</button><button type="submit" class="primary-button" id="save-notes">Save progress</button></div></form></dialog>
+  <dialog id="about-dialog" aria-labelledby="about-title"><div class="dialog-top"><span class="eyebrow">A PLACE TO MAKE PROGRESS</span><button type="button" class="close-button" data-close aria-label="Close help">×</button></div><h2 id="about-title">Your library, your pace.</h2><p>Browse full exam papers by year, session, or paper type. Use <strong>Topical practice</strong> to focus on a topic, and <strong>Worked solutions</strong> for source-provided answers.</p><ul class="help-list"><li><span class="status-dot to_process"></span><strong>To process</strong> — add a paper to your practice queue.</li><li><span class="status-dot know_how"></span><strong>Know how to solve</strong> — you understand the approach.</li><li><span class="status-dot solved"></span><strong>Solved</strong> — you have completed the paper.</li></ul><p>Each group has its own mark and notes. A group mark leaves individual paper marks as they are. Use <strong>Mark all … papers</strong> or select checkboxes to change multiple paper marks.</p><p>Downloaded PDFs open locally. A link labelled <strong>online</strong> opens the original file at PapaCambridge. Reference files include examiner reports, grade thresholds, and practical instructions.</p><p>Progress is saved by the Python backend in SQLite. Use <strong>Export progress</strong> for a portable backup; <strong>Restore</strong> merges a backup into your current progress, replacing marks for matching papers and groups.</p><div class="dialog-actions"><button class="primary-button" data-close>Back to practice</button></div></dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <noscript><p class="noscript">Enable JavaScript to browse papers and save progress.</p></noscript>
+</body>
+</html>

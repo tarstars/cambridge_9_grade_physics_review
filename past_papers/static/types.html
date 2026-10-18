@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1c594b">
+  <title>Paperwork · Physics task types</title>
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/types.css">
+  <script src="/types.js" defer></script>
+</head>
+<body class="type-bank">
+  <a class="skip-link" href="#practice">Skip to practice</a>
+  <aside class="sidebar" aria-label="Task type navigation">
+    <a class="brand" href="/"><span class="brand-icon">φ</span><span>Paperwork<span class="brand-sub">LEARN THE APPROACH</span></span></a>
+    <div class="bank-course"><span class="small-dot"></span> Physics 9702 <span>AS & A Level</span></div>
+    <a class="nav-button all-types" href="#"><span class="nav-symbol">▦</span> All task types <span class="count" id="type-count"></span></a>
+    <p class="nav-label">TOPIC → TASK TYPE</p>
+    <nav id="type-nav" aria-label="Topics and specific task types"></nav>
+    <div class="bank-links"><a href="/questions">All questions & source coverage ↗</a><a href="/papers">Full papers & reference files ↗</a></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><span>YOUR PRACTICE BANK <span class="breadcrumb">/ Task types</span></span><div class="top-actions"><span id="save-state" role="status"><span class="small-dot"></span> Saved on this laptop</span><button class="quiet-button" id="restore">Restore</button><a class="quiet-button" href="/api/export" download>↓ Export progress</a><input id="restore-file" type="file" accept=".json,application/json" hidden></div></header>
+    <main id="practice">
+      <section id="overview-intro" class="bank-intro"><div class="eyebrow">PHYSICS · ONE APPROACH AT A TIME</div><h1>Recognise the pattern.<br>Know how to solve it.</h1><p>Choose a specific task type. Compare real exam questions that use the same approach.</p><div id="bank-summary" class="bank-summary"></div></section>
+      <div class="browse-toolbar"><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Find a task type, e.g. base quantity or potential divider" aria-label="Search task types"></label><label><span class="sr-only">Syllabus topic</span><select id="topic"><option value="">All syllabus topics</option></select></label><label><span class="sr-only">Question format</span><select id="format"><option value="">All question formats</option><option value="1">Multiple choice</option><option value="structured">Structured & practical</option></select></label></div>
+      <section id="type-overview" aria-labelledby="overview-title"><div class="overview-heading"><div><h2 id="overview-title">Explore task types</h2><span id="overview-count" class="muted"></span></div><label class="type-progress-filter">My grasp of the approach<select id="type-status"><option value="">Any progress</option><option value="unmarked">Not marked</option><option value="to_process">To process</option><option value="know_how">Know how to solve</option><option value="solved">Solved</option></select></label></div><div id="type-cards" class="type-grid" aria-busy="true"><p class="muted">Opening the task types…</p></div><div id="unassigned-notice"></div></section>
+      <section id="type-practice" hidden aria-labelledby="practice-title"><a class="back-types" href="#">← All task types</a><div id="type-heading"></div><div class="practice-progress"><label>My grasp of this approach<select id="approach-status" class="status-select"></select></label><span id="type-progress-caption" class="muted">This mark belongs to the type. Each question has its own mark.</span></div><div class="approach-tools"><details id="approach-hint" class="approach-hint"><summary>Shared approach</summary><p id="approach-text"></p></details><details class="type-notes"><summary>Approach notes</summary><textarea id="approach-notes" rows="3" maxlength="20000" placeholder="What should I recognise? Which step do I forget?"></textarea><button id="save-approach" class="primary-button">Save approach notes</button></details></div><details id="practice-filters" class="practice-filters"><summary>Search & question format</summary></details><div class="practice-controls"><p id="question-count" class="muted" role="status"></p><div class="task-layout" role="group" aria-label="Question layout"><button data-view="compare">Compare</button><button data-view="list">Reading list</button></div><label><span>Question progress</span><select id="question-status" aria-label="Filter questions by progress"><option value="">All questions</option><option value="unmarked">Not marked</option><option value="to_process">To process</option><option value="know_how">Know how to solve</option><option value="solved">Solved</option></select></label></div><div id="task-cards" aria-busy="false"></div><nav id="task-pages" class="task-pages" aria-label="Question pages"></nav></section>
+      <footer class="bank-footer">Original question crops, with diagrams and answer choices intact. Numbered subparts stay together.<br>Task-type assignments are automatic suggestions unless you confirm or correct them. <a href="/questions">Check source coverage ↗</a></footer>
+    </main>
+  </div>
+  <dialog id="zoom" class="zoom-dialog" aria-labelledby="zoom-title"><header><h2 id="zoom-title">Original question</h2><button class="quiet-button" id="close-zoom">Close ×</button></header><p class="muted">Scroll to inspect the original at full size.</p><div id="zoom-content"></div></dialog>
+  <div id="toast" class="toast" hidden role="status"></div>
+  <noscript>Enable JavaScript to browse task types and save progress.</noscript>
+</body>
+</html>
