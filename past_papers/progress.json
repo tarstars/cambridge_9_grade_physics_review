@@ -10,6 +10,48 @@
         "status": "solved",
         "updated_at": "2026-10-18T13:58:16.059947+00:00"
       },
+      "02511e7e8f5123d916d2-q1": {
+        "id": "02511e7e8f5123d916d2-q1",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-25T15:52:51.737015+00:00"
+      },
+      "02511e7e8f5123d916d2-q3": {
+        "id": "02511e7e8f5123d916d2-q3",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T15:53:41.076321+00:00"
+      },
+      "02511e7e8f5123d916d2-q4": {
+        "id": "02511e7e8f5123d916d2-q4",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-30T04:58:08.950591+00:00"
+      },
+      "02d8a06875213015cdaa-q1": {
+        "id": "02d8a06875213015cdaa-q1",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T16:07:39.578259+00:00"
+      },
+      "02d8a06875213015cdaa-q2": {
+        "id": "02d8a06875213015cdaa-q2",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-25T16:08:28.367835+00:00"
+      },
+      "09a3300c6ad8f3151af2-q2": {
+        "id": "09a3300c6ad8f3151af2-q2",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T16:32:49.946736+00:00"
+      },
       "0b10cc9606d98f70da32-q34": {
         "id": "0b10cc9606d98f70da32-q34",
         "kind": "task",
@@ -45,12 +87,40 @@
         "status": "solved",
         "updated_at": "2026-10-18T13:25:40.525321+00:00"
       },
+      "0b10cc9606d98f70da32-q51": {
+        "id": "0b10cc9606d98f70da32-q51",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T16:35:34.514259+00:00"
+      },
       "0bbf12f403ef130f88a6-q1": {
         "id": "0bbf12f403ef130f88a6-q1",
         "kind": "task",
         "notes": "",
         "status": "solved",
         "updated_at": "2026-10-18T13:39:15.203436+00:00"
+      },
+      "0d87aa95b23039b4eeb5-q12": {
+        "id": "0d87aa95b23039b4eeb5-q12",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-30T04:33:39.727463+00:00"
+      },
+      "0f69cb1b435ea60d92f3-q1": {
+        "id": "0f69cb1b435ea60d92f3-q1",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-30T04:11:50.398062+00:00"
+      },
+      "142cca2c145445be50de-q1": {
+        "id": "142cca2c145445be50de-q1",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T15:51:38.290798+00:00"
       },
       "162b2598c5eb32e6cbbe-q2": {
         "id": "162b2598c5eb32e6cbbe-q2",
@@ -73,12 +143,68 @@
         "status": "solved",
         "updated_at": "2026-10-18T14:05:07.118725+00:00"
       },
+      "16480c378e4af1541a04-q2": {
+        "id": "16480c378e4af1541a04-q2",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-25T15:57:53.783321+00:00"
+      },
       "1d587f84ae60be301eea-q2": {
         "id": "1d587f84ae60be301eea-q2",
         "kind": "task",
         "notes": "",
         "status": "solved",
         "updated_at": "2026-10-18T12:56:40.956852+00:00"
+      },
+      "1f50f2b8f1fe97ebbac2-q1": {
+        "id": "1f50f2b8f1fe97ebbac2-q1",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T16:34:56.639771+00:00"
+      },
+      "2046f6e9d9dd19e0eab7-q6": {
+        "id": "2046f6e9d9dd19e0eab7-q6",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-30T04:59:52.362744+00:00"
+      },
+      "22feb046098fdf3eeb15-q1": {
+        "id": "22feb046098fdf3eeb15-q1",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-25T15:38:25.847253+00:00"
+      },
+      "22feb046098fdf3eeb15-q3": {
+        "id": "22feb046098fdf3eeb15-q3",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-30T04:34:14.736557+00:00"
+      },
+      "24966827838225d4ed39-q2": {
+        "id": "24966827838225d4ed39-q2",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T15:32:40.079704+00:00"
+      },
+      "2d3c499d78cd87743da8-q3": {
+        "id": "2d3c499d78cd87743da8-q3",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-30T04:54:22.561873+00:00"
+      },
+      "2d3c499d78cd87743da8-q4": {
+        "id": "2d3c499d78cd87743da8-q4",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-30T04:55:01.711124+00:00"
       },
       "301af0851bd3b8577487-q2": {
         "id": "301af0851bd3b8577487-q2",
@@ -94,12 +220,75 @@
         "status": "solved",
         "updated_at": "2026-10-18T14:01:17.717357+00:00"
       },
+      "34e2e5a55d11a729fa09-q3": {
+        "id": "34e2e5a55d11a729fa09-q3",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-30T04:25:45.621564+00:00"
+      },
+      "376a359403f9628e76b0-q4": {
+        "id": "376a359403f9628e76b0-q4",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-30T05:07:19.296758+00:00"
+      },
       "37f4dc5a4acecd0af9e1-q1": {
         "id": "37f4dc5a4acecd0af9e1-q1",
         "kind": "task",
         "notes": "",
         "status": "solved",
         "updated_at": "2026-10-18T13:48:40.748026+00:00"
+      },
+      "3a7273d77ab0379e0f66-q5": {
+        "id": "3a7273d77ab0379e0f66-q5",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-30T04:45:01.779289+00:00"
+      },
+      "3c128ee26e21c40a107b-q2": {
+        "id": "3c128ee26e21c40a107b-q2",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-30T04:23:12.180149+00:00"
+      },
+      "3c128ee26e21c40a107b-q22": {
+        "id": "3c128ee26e21c40a107b-q22",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T15:36:46.998981+00:00"
+      },
+      "3c128ee26e21c40a107b-q3": {
+        "id": "3c128ee26e21c40a107b-q3",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T15:34:52.756062+00:00"
+      },
+      "3c6bb5fc1fd70177f48f-q2": {
+        "id": "3c6bb5fc1fd70177f48f-q2",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T16:31:50.773061+00:00"
+      },
+      "3c6bb5fc1fd70177f48f-q4": {
+        "id": "3c6bb5fc1fd70177f48f-q4",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-30T04:41:53.304386+00:00"
+      },
+      "3fb4d19aa05a1503d6ef-q1": {
+        "id": "3fb4d19aa05a1503d6ef-q1",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T15:57:28.371929+00:00"
       },
       "4001097e77709c334c6b-q1": {
         "id": "4001097e77709c334c6b-q1",
@@ -108,12 +297,33 @@
         "status": "solved",
         "updated_at": "2026-10-18T14:00:46.144931+00:00"
       },
+      "40754c298a36ce856904-q1": {
+        "id": "40754c298a36ce856904-q1",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T16:12:12.291638+00:00"
+      },
+      "40754c298a36ce856904-q3": {
+        "id": "40754c298a36ce856904-q3",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-25T16:06:36.057161+00:00"
+      },
       "42c6e191b1e19c4869ee-q1": {
         "id": "42c6e191b1e19c4869ee-q1",
         "kind": "task",
         "notes": "",
         "status": "solved",
         "updated_at": "2026-10-18T13:12:46.940118+00:00"
+      },
+      "42c6e191b1e19c4869ee-q5": {
+        "id": "42c6e191b1e19c4869ee-q5",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-30T04:56:01.913999+00:00"
       },
       "43b1d1a160138b76c755-q2": {
         "id": "43b1d1a160138b76c755-q2",
@@ -128,6 +338,13 @@
         "notes": "",
         "status": "solved",
         "updated_at": "2026-10-18T13:28:24.791741+00:00"
+      },
+      "43c31d03b869439c92b3-q3": {
+        "id": "43c31d03b869439c92b3-q3",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-30T04:38:22.109168+00:00"
       },
       "43e2cc247c226d440d7d-q11": {
         "id": "43e2cc247c226d440d7d-q11",
@@ -150,12 +367,26 @@
         "status": "solved",
         "updated_at": "2026-10-18T13:26:32.273392+00:00"
       },
+      "47a76ef03808988391ee-q2": {
+        "id": "47a76ef03808988391ee-q2",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-30T04:16:12.218950+00:00"
+      },
       "4822b4f12da95d0ecdf2-q2": {
         "id": "4822b4f12da95d0ecdf2-q2",
         "kind": "task",
         "notes": "",
         "status": "solved",
         "updated_at": "2026-10-18T13:08:21.964049+00:00"
+      },
+      "4822b4f12da95d0ecdf2-q5": {
+        "id": "4822b4f12da95d0ecdf2-q5",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-30T04:51:37.999440+00:00"
       },
       "48c04f0f6ecc65cba5d9-q1": {
         "id": "48c04f0f6ecc65cba5d9-q1",
@@ -164,12 +395,103 @@
         "status": "solved",
         "updated_at": "2026-10-18T13:30:26.182257+00:00"
       },
+      "48c04f0f6ecc65cba5d9-q5": {
+        "id": "48c04f0f6ecc65cba5d9-q5",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-30T05:07:26.681298+00:00"
+      },
+      "49679faaa1e17aa53d2f-q2": {
+        "id": "49679faaa1e17aa53d2f-q2",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T15:49:56.547996+00:00"
+      },
+      "49ef8a60cf8dbe6e4116-q2": {
+        "id": "49ef8a60cf8dbe6e4116-q2",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-30T04:25:13.234089+00:00"
+      },
+      "49ef8a60cf8dbe6e4116-q22": {
+        "id": "49ef8a60cf8dbe6e4116-q22",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T15:37:11.459981+00:00"
+      },
+      "49ef8a60cf8dbe6e4116-q3": {
+        "id": "49ef8a60cf8dbe6e4116-q3",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T15:36:54.524900+00:00"
+      },
+      "4c253a366d3b8328436d-q2": {
+        "id": "4c253a366d3b8328436d-q2",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-25T15:58:56.802972+00:00"
+      },
       "512258ca9e047f37a6c7-q2": {
         "id": "512258ca9e047f37a6c7-q2",
         "kind": "task",
         "notes": "",
         "status": "solved",
         "updated_at": "2026-10-18T13:02:03.914911+00:00"
+      },
+      "52a87eb723411685dee6-q2": {
+        "id": "52a87eb723411685dee6-q2",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T15:49:10.838614+00:00"
+      },
+      "55c0075d609140828a62-q5": {
+        "id": "55c0075d609140828a62-q5",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-30T04:43:39.769167+00:00"
+      },
+      "6309b8968b6aa05bc72f-q3": {
+        "id": "6309b8968b6aa05bc72f-q3",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T15:39:41.432752+00:00"
+      },
+      "6697516a356fd2398fef-q3": {
+        "id": "6697516a356fd2398fef-q3",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-30T04:22:38.984104+00:00"
+      },
+      "6877f29e44f26d0dceaa-q9": {
+        "id": "6877f29e44f26d0dceaa-q9",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-30T04:58:27.654274+00:00"
+      },
+      "68ebd65c22321fad48bc-q2": {
+        "id": "68ebd65c22321fad48bc-q2",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-30T04:12:47.583510+00:00"
+      },
+      "6a1bb535d4ff4b1bb170-q3": {
+        "id": "6a1bb535d4ff4b1bb170-q3",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-25T16:07:13.807297+00:00"
       },
       "6a1bb535d4ff4b1bb170-q33": {
         "id": "6a1bb535d4ff4b1bb170-q33",
@@ -178,12 +500,33 @@
         "status": "solved",
         "updated_at": "2026-10-18T13:16:16.363639+00:00"
       },
+      "6a1bb535d4ff4b1bb170-q5": {
+        "id": "6a1bb535d4ff4b1bb170-q5",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-30T04:59:43.451038+00:00"
+      },
+      "6b606c19980862414523-q2": {
+        "id": "6b606c19980862414523-q2",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-30T04:15:32.212732+00:00"
+      },
       "6be39217ae9605d98f73-q4": {
         "id": "6be39217ae9605d98f73-q4",
         "kind": "task",
         "notes": "",
         "status": "solved",
         "updated_at": "2026-10-18T13:17:35.285320+00:00"
+      },
+      "6d78050a72febe8ff519-q5": {
+        "id": "6d78050a72febe8ff519-q5",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-30T04:54:05.471400+00:00"
       },
       "70318c0c97a85423ea6a-q1": {
         "id": "70318c0c97a85423ea6a-q1",
@@ -192,6 +535,20 @@
         "status": "solved",
         "updated_at": "2026-10-18T13:47:40.340953+00:00"
       },
+      "746b4c9e6b82dae3e62a-q4": {
+        "id": "746b4c9e6b82dae3e62a-q4",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-30T04:25:03.449757+00:00"
+      },
+      "75eeaac0685dec8112f3-q2": {
+        "id": "75eeaac0685dec8112f3-q2",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T16:35:15.270308+00:00"
+      },
       "75eeaac0685dec8112f3-q3": {
         "id": "75eeaac0685dec8112f3-q3",
         "kind": "task",
@@ -199,12 +556,68 @@
         "status": "solved",
         "updated_at": "2026-10-18T13:17:50.098484+00:00"
       },
+      "7baf24146745560da87d-q1": {
+        "id": "7baf24146745560da87d-q1",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T16:33:43.267010+00:00"
+      },
+      "7dc931c371b32d62182e-q1": {
+        "id": "7dc931c371b32d62182e-q1",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T16:25:51.047157+00:00"
+      },
       "83ad1707064803605833-q1": {
         "id": "83ad1707064803605833-q1",
         "kind": "task",
         "notes": "",
         "status": "solved",
         "updated_at": "2026-10-18T13:36:48.804718+00:00"
+      },
+      "897b18481421487b1cb2-q2": {
+        "id": "897b18481421487b1cb2-q2",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T15:45:19.639567+00:00"
+      },
+      "89c061ee350f3f9a1398-q2": {
+        "id": "89c061ee350f3f9a1398-q2",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-25T15:58:50.184988+00:00"
+      },
+      "89c061ee350f3f9a1398-q6": {
+        "id": "89c061ee350f3f9a1398-q6",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-30T04:58:38.474893+00:00"
+      },
+      "8c29ebbc149d68074c96-q1": {
+        "id": "8c29ebbc149d68074c96-q1",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-30T04:12:35.908572+00:00"
+      },
+      "8d07f6461413181c65f8-q1": {
+        "id": "8d07f6461413181c65f8-q1",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T16:06:54.006414+00:00"
+      },
+      "8d07f6461413181c65f8-q2": {
+        "id": "8d07f6461413181c65f8-q2",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-25T16:07:02.141652+00:00"
       },
       "90330b48f1dfcb3cf011-q2": {
         "id": "90330b48f1dfcb3cf011-q2",
@@ -220,6 +633,34 @@
         "status": "solved",
         "updated_at": "2026-10-18T13:24:37.132866+00:00"
       },
+      "96063e7a4374452b1753-q5": {
+        "id": "96063e7a4374452b1753-q5",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-30T04:43:11.043892+00:00"
+      },
+      "9bbe8bb5ad4a6854f10b-q2": {
+        "id": "9bbe8bb5ad4a6854f10b-q2",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T15:49:06.009466+00:00"
+      },
+      "9bbe8bb5ad4a6854f10b-q3": {
+        "id": "9bbe8bb5ad4a6854f10b-q3",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-25T16:10:35.824138+00:00"
+      },
+      "9bbe8bb5ad4a6854f10b-q5": {
+        "id": "9bbe8bb5ad4a6854f10b-q5",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-30T04:52:18.103268+00:00"
+      },
       "9dac1fcbd785997f89aa-q1": {
         "id": "9dac1fcbd785997f89aa-q1",
         "kind": "task",
@@ -234,6 +675,27 @@
         "status": "solved",
         "updated_at": "2026-10-18T13:30:56.247777+00:00"
       },
+      "9e21da0b7bea0ffbd1f4-q1": {
+        "id": "9e21da0b7bea0ffbd1f4-q1",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T16:35:30.265316+00:00"
+      },
+      "9e44ca32cba9d5a56559-q3": {
+        "id": "9e44ca32cba9d5a56559-q3",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-30T04:35:00.644084+00:00"
+      },
+      "a2e37c7f8a40f10e0906-q6": {
+        "id": "a2e37c7f8a40f10e0906-q6",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-30T04:52:49.061434+00:00"
+      },
       "a33341d54a34fd1b4c0b-q1": {
         "id": "a33341d54a34fd1b4c0b-q1",
         "kind": "task",
@@ -241,12 +703,124 @@
         "status": "solved",
         "updated_at": "2026-10-18T13:36:27.593008+00:00"
       },
+      "a3a7a4ac184b502af995-q3": {
+        "id": "a3a7a4ac184b502af995-q3",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-30T04:19:24.719050+00:00"
+      },
+      "a59279e2f08589fa883c-q4": {
+        "id": "a59279e2f08589fa883c-q4",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T16:09:42.091648+00:00"
+      },
+      "a60b49a6a69d9f8ae847-q2": {
+        "id": "a60b49a6a69d9f8ae847-q2",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-25T15:45:03.682203+00:00"
+      },
       "a6d3977f0953e8c8db60-q1": {
         "id": "a6d3977f0953e8c8db60-q1",
         "kind": "task",
         "notes": "",
         "status": "solved",
         "updated_at": "2026-10-18T13:57:12.015483+00:00"
+      },
+      "ad843c787bcc315a1164-q2": {
+        "id": "ad843c787bcc315a1164-q2",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-25T15:42:36.470339+00:00"
+      },
+      "b128fdea1342b6820193-q13": {
+        "id": "b128fdea1342b6820193-q13",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-25T15:56:03.391047+00:00"
+      },
+      "b128fdea1342b6820193-q3": {
+        "id": "b128fdea1342b6820193-q3",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T15:55:36.069565+00:00"
+      },
+      "b14682c11d51c25a14fb-q4": {
+        "id": "b14682c11d51c25a14fb-q4",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-30T05:05:44.731952+00:00"
+      },
+      "b14682c11d51c25a14fb-q5": {
+        "id": "b14682c11d51c25a14fb-q5",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-30T05:05:51.954368+00:00"
+      },
+      "b1a311807d5fb35aa19a-q2": {
+        "id": "b1a311807d5fb35aa19a-q2",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T16:13:31.508176+00:00"
+      },
+      "b87dd747f707ddc1c2d8-q2": {
+        "id": "b87dd747f707ddc1c2d8-q2",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-30T04:35:36.158920+00:00"
+      },
+      "b9bb2c7be9be4102b0df-q2": {
+        "id": "b9bb2c7be9be4102b0df-q2",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T16:33:47.481154+00:00"
+      },
+      "c3123bdf112c7135e7dd-q2": {
+        "id": "c3123bdf112c7135e7dd-q2",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-25T15:59:03.166652+00:00"
+      },
+      "c3123bdf112c7135e7dd-q5": {
+        "id": "c3123bdf112c7135e7dd-q5",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-30T04:58:52.912554+00:00"
+      },
+      "c5773635bb2ae2c07f42-q3": {
+        "id": "c5773635bb2ae2c07f42-q3",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-30T04:37:17.946804+00:00"
+      },
+      "cb3f21cc345b7dce6b45-q10": {
+        "id": "cb3f21cc345b7dce6b45-q10",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-30T04:15:44.471851+00:00"
+      },
+      "cb3f21cc345b7dce6b45-q25": {
+        "id": "cb3f21cc345b7dce6b45-q25",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-25T16:28:05.396826+00:00"
       },
       "cb3f21cc345b7dce6b45-q27": {
         "id": "cb3f21cc345b7dce6b45-q27",
@@ -269,12 +843,33 @@
         "status": "solved",
         "updated_at": "2026-10-18T14:05:49.348572+00:00"
       },
+      "cb7338d8f94b2b3609e4-q3": {
+        "id": "cb7338d8f94b2b3609e4-q3",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-25T15:38:54.433134+00:00"
+      },
       "d4e1f0545fb59dcd8983-q109": {
         "id": "d4e1f0545fb59dcd8983-q109",
         "kind": "task",
         "notes": "",
         "status": "solved",
         "updated_at": "2026-10-18T14:05:13.025199+00:00"
+      },
+      "d805faef4c4cf379654a-q5": {
+        "id": "d805faef4c4cf379654a-q5",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-30T04:55:24.917813+00:00"
+      },
+      "da349fd18b771917ee3b-q4": {
+        "id": "da349fd18b771917ee3b-q4",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-30T05:06:01.917284+00:00"
       },
       "db7af2fb645f10aa5c85-q3": {
         "id": "db7af2fb645f10aa5c85-q3",
@@ -290,12 +885,96 @@
         "status": "solved",
         "updated_at": "2026-10-18T13:59:26.639676+00:00"
       },
+      "de7470eaf41ae8ed44cb-q4": {
+        "id": "de7470eaf41ae8ed44cb-q4",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T15:34:08.975769+00:00"
+      },
+      "df89d89c81a8b40586a3-q5": {
+        "id": "df89d89c81a8b40586a3-q5",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-30T04:50:14.306821+00:00"
+      },
+      "e13d4026f618aaae9b52-q5": {
+        "id": "e13d4026f618aaae9b52-q5",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-30T04:49:32.956873+00:00"
+      },
+      "e16612cb0e51d1f2a308-q6": {
+        "id": "e16612cb0e51d1f2a308-q6",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-30T05:05:02.178655+00:00"
+      },
+      "e366229f91ad52c8e701-q2": {
+        "id": "e366229f91ad52c8e701-q2",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-25T16:04:45.019787+00:00"
+      },
+      "e366229f91ad52c8e701-q4": {
+        "id": "e366229f91ad52c8e701-q4",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-30T04:59:17.347312+00:00"
+      },
+      "e4dfb7fe75c2978a0721-q2": {
+        "id": "e4dfb7fe75c2978a0721-q2",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T15:46:28.192946+00:00"
+      },
+      "e74ad7f8b42a95517ada-q2": {
+        "id": "e74ad7f8b42a95517ada-q2",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T15:50:01.862532+00:00"
+      },
       "e9b0c7671bcdd6547ea8-q1": {
         "id": "e9b0c7671bcdd6547ea8-q1",
         "kind": "task",
         "notes": "",
         "status": "solved",
         "updated_at": "2026-10-18T14:04:30.486356+00:00"
+      },
+      "eac1595b42fab2ebea42-q3": {
+        "id": "eac1595b42fab2ebea42-q3",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-30T04:39:53.521139+00:00"
+      },
+      "ec79710d4f0516dc5b75-q1": {
+        "id": "ec79710d4f0516dc5b75-q1",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-25T16:27:59.082084+00:00"
+      },
+      "f111251d0972e08b4248-q5": {
+        "id": "f111251d0972e08b4248-q5",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-30T04:44:56.275979+00:00"
+      },
+      "f2df10d94477a40e1888-q5": {
+        "id": "f2df10d94477a40e1888-q5",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-30T05:05:32.310868+00:00"
       },
       "f30e09490815b2a7e9c1-q2": {
         "id": "f30e09490815b2a7e9c1-q2",
@@ -311,6 +990,20 @@
         "status": "solved",
         "updated_at": "2026-10-18T13:29:31.998538+00:00"
       },
+      "f3a2811d63c082c40303-q5": {
+        "id": "f3a2811d63c082c40303-q5",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-30T04:51:18.533007+00:00"
+      },
+      "f4842514619e5b053604-q3": {
+        "id": "f4842514619e5b053604-q3",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-30T04:41:14.808336+00:00"
+      },
       "f4842514619e5b053604-q35": {
         "id": "f4842514619e5b053604-q35",
         "kind": "task",
@@ -318,12 +1011,61 @@
         "status": "solved",
         "updated_at": "2026-10-18T13:05:59.802933+00:00"
       },
+      "f794a43815b0ae42d519-q803": {
+        "id": "f794a43815b0ae42d519-q803",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T16:41:35.931654+00:00"
+      },
+      "f9298649ad8471a7cd72-q1": {
+        "id": "f9298649ad8471a7cd72-q1",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T15:47:27.461624+00:00"
+      },
+      "f9298649ad8471a7cd72-q2": {
+        "id": "f9298649ad8471a7cd72-q2",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-25T15:48:00.329427+00:00"
+      },
       "f97d44129d7c7c5a321c-q1": {
         "id": "f97d44129d7c7c5a321c-q1",
         "kind": "task",
         "notes": "",
         "status": "solved",
         "updated_at": "2026-10-18T13:30:46.800753+00:00"
+      },
+      "f97d44129d7c7c5a321c-q5": {
+        "id": "f97d44129d7c7c5a321c-q5",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-30T05:07:30.637557+00:00"
+      },
+      "fbe6be18549305b68957-q3": {
+        "id": "fbe6be18549305b68957-q3",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-30T04:28:01.746837+00:00"
+      },
+      "fd1d17d47b3cb1843271-q4": {
+        "id": "fd1d17d47b3cb1843271-q4",
+        "kind": "task",
+        "notes": "",
+        "status": "know_how",
+        "updated_at": "2026-10-25T15:38:19.219843+00:00"
+      },
+      "ff73b1e48229318fcaed-q1": {
+        "id": "ff73b1e48229318fcaed-q1",
+        "kind": "task",
+        "notes": "",
+        "status": "solved",
+        "updated_at": "2026-10-25T16:32:26.133439+00:00"
       }
     },
     "test": {},
